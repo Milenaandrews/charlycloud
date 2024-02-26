@@ -8,7 +8,6 @@ import Planes from "../../components/Planes";
 export default function Home() {
   return (
     <div>
-      <h1 className="text-slate-950">hola soy el home</h1>
       <Encabezado/>
       <Caracteristicas/>
       <Beneficios/>

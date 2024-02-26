@@ -1,5 +1,6 @@
 import React from "react";
 import { Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Button, NavbarMenuToggle, NavbarMenu } from "@nextui-org/react";
+import {Image} from '@nextui-org/react';
 
 
 
@@ -24,8 +25,9 @@ const AppBar = () => {
 
       <NavbarContent className="sm:hidden pr-3" justify="center" >
         <NavbarBrand>
+        <Image alt="logo" src="../assets/images/logo-PhotoRoom.png-PhotoRoom.png" />
           <Link href="/">
-            <p className="font-bold text-gray-950">Charly Cloud</p>
+            <p className="font-bold text-gray-950">Charly Cloud &#174;</p>
           </Link>
         </NavbarBrand>
       </NavbarContent>
@@ -44,8 +46,9 @@ const AppBar = () => {
       {/* Navbar XL */}
       <NavbarContent className="hidden sm:flex gap-4" justify="start">
         <NavbarBrand>
+          <Image alt="logo" src="../assets/images/logo-PhotoRoom.png-PhotoRoom.png" />
           <Link href="/">
-            <p className="font-bold text-cyan-400">Charly Cloud</p>
+            <p className="font-bold text-cyan-400">Charly Cloud &#174;</p>
           </Link>
         </NavbarBrand>
 
