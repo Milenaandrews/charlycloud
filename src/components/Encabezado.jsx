@@ -6,7 +6,7 @@ const Encabezado = () => {
             <div>
                 <p className='text-justify text-white text-xl decoration-4 '>
                     Rentabiliza tu farmacia </p>
-                <p className="my-4"></p>
+                <br/>
                 <p className='text-justify text-white'>
                     Ayudando al medio ambiente </p>
             </div>
