@@ -1,18 +1,26 @@
-import React from 'react'
+'use client'
+import React, { useContext, useEffect } from 'react'
 import {Input, Button } from "@nextui-org/react"
+import ContactoContext from '@/context/Contacto/ContactoContext'
 
 
 
 const Formulario = () => {
+  const {guardarContacto}= useContext(ContactoContext)
+
+  useEffect(() => {
+    guardarContacto();
+  },[])
+    
   return (
     <div className='w-full h-screen flex items-center justify-center'>
       <div className='flex bg-slate-700/70 rounded-xl w-auto h-auto flex-col items-center justify-center gap-4 p-3'>
           <h1>Formulario </h1>
-          <Input className='w-80' type="text" label="Nombre" required />
+          <Input className='w-80' type="text" label="Nombre de Contacto" required />
           <Input className='w-80' type="text" label="Farmacia" />
           <Input className='w-80' type="email" label="Email" />
-          <Input className='w-80' type="text" label="Ciudad" />
-          <Input className='w-80' type="text" label="País" />
+          {/* <Input className='w-80' type="text" label="Ciudad" />
+          <Input className='w-80' type="text" label="País" /> */}
           <Button color="primary" >Enviar</Button>
 
       </div>

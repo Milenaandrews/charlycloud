@@ -25,7 +25,7 @@ const AppBar = () => {
 
       <NavbarContent className="sm:hidden pr-3" justify="center" >
         <NavbarBrand>
-          <Image alt="logo" src="https://res.cloudinary.com/dzppqa6a9/image/upload/v1709075705/logocharlysinfondo_omzz7l.png" className="w-10 h-10"/>       
+          <Image alt="logo" src="https://res.cloudinary.com/dzppqa6a9/image/upload/v1709075705/logocharlysinfondo_omzz7l.png" width={300} height={300} className="w-10 h-10"/>       
           <Link href="/">
             <p className="font-bold text-gray-950">Charly Cloud &#174;</p>
           </Link>
@@ -47,7 +47,7 @@ const AppBar = () => {
       <NavbarContent className="hidden sm:flex gap-4" justify="start">
         <NavbarBrand>
           <NavbarItem>
-            <Image alt="logo" src="https://res.cloudinary.com/dzppqa6a9/image/upload/v1709075705/logocharlysinfondo_omzz7l.png" className="w-10 h-10"/>
+            <Image alt="logo" src="https://res.cloudinary.com/dzppqa6a9/image/upload/v1709075705/logocharlysinfondo_omzz7l.png" width={300} height={300} className="w-10 h-10"/>
           </NavbarItem>
           
           <Link href="/">
