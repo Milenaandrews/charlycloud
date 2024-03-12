@@ -5,7 +5,6 @@ const contactoReducer = (state, action) => {
     
     switch (type) {
         case "GUARDARCONTACTO":
-            localStorage.setItem("id",payload)
             return{
                 ...state,
                 contacto: payload
