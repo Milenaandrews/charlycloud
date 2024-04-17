@@ -1,5 +1,5 @@
 import React from "react";
-import { Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Button, NavbarMenuToggle, NavbarMenu } from "@nextui-org/react";
+import { Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, NavbarMenuToggle, NavbarMenu } from "@nextui-org/react";
 import Image from 'next/image'
 
 
@@ -17,7 +17,7 @@ const AppBar = () => {
     },
   ]
   return (
-    <Navbar className="bg-slate-700/80">
+    <Navbar className="bg-blue-600/80">
       {/* Navbar XS */}
       <NavbarContent className="sm:hidden" justify="start">
         <NavbarMenuToggle />
