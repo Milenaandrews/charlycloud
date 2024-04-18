@@ -8,16 +8,24 @@ const AppBar = () => {
     
   const links = [
     {
-      nombre: "Caracteristicas",
+      nombre: "Características",
       href: "/"
     },
     {
-      nombre: "Proyectos",
+      nombre: "Beneficios",
+      href: "/"
+    },
+    {
+      nombre: "Planes",
+      href: "/"
+    },
+    {
+      nombre: "Contacto",
       href: "/"
     },
   ]
   return (
-    <Navbar className="bg-blue-600/80">
+    <Navbar className="bg-gray-200/80">
       {/* Navbar XS */}
       <NavbarContent className="sm:hidden" justify="start">
         <NavbarMenuToggle />
@@ -25,9 +33,9 @@ const AppBar = () => {
 
       <NavbarContent className="sm:hidden pr-3" justify="center" >
         <NavbarBrand>
-          <Image alt="logo" src="https://res.cloudinary.com/dzppqa6a9/image/upload/v1709075705/logocharlysinfondo_omzz7l.png" width={300} height={300} className="w-10 h-10"/>       
+          <Image alt="logo" src="https://res.cloudinary.com/dzppqa6a9/image/upload/v1709075705/logocharlysinfondo_omzz7l.png" width={400} height={400} className="w-12 h-10"/>       
           <Link href="/">
-            <p className="font-bold text-gray-950">Charly Cloud &#174;</p>
+            <p className="font-bold text-charly">Charly Cloud &#174;</p>
           </Link>
         </NavbarBrand>
       </NavbarContent>
@@ -35,7 +43,7 @@ const AppBar = () => {
       <NavbarMenu>
         {links.map((link, i) => (
           <NavbarItem key={i}>
-            <Link className="text-white" href={link.href}>
+            <Link className="text-charly" href={link.href}>
               {link.nombre}
             </Link>
           </NavbarItem>
@@ -47,11 +55,11 @@ const AppBar = () => {
       <NavbarContent className="hidden sm:flex gap-4" justify="start">
         <NavbarBrand>
           <NavbarItem>
-            <Image alt="logo" src="https://res.cloudinary.com/dzppqa6a9/image/upload/v1709075705/logocharlysinfondo_omzz7l.png" width={300} height={300} className="w-10 h-10"/>
+            <Image alt="logo" src="https://res.cloudinary.com/dzppqa6a9/image/upload/v1709075705/logocharlysinfondo_omzz7l.png" width={100} height={300} />
           </NavbarItem>
           
           <Link href="/">
-            <p className="font-bold text-cyan-400">Charly Cloud &#174;</p>
+            <p className="font-bold text-charly">Charly Cloud &#174;</p>
           </Link>
         </NavbarBrand>
 
@@ -61,7 +69,7 @@ const AppBar = () => {
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         {links.map((link, i) => (
           <NavbarItem key={i}>
-            <Link className="text-white" href={link.href}>
+            <Link className="text-charly font-bold" href={link.href}>
               {link.nombre}
             </Link>
           </NavbarItem>

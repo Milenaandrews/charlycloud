@@ -26,7 +26,10 @@ module.exports = {
           colors: {
             secondary: {
               DEFAULT: "#f5741c",
-          }
+          },
+            charly:{
+              DEFAULT: "#0083ca"
+            }
         }
       }
     }
