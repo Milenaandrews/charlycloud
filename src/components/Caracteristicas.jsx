@@ -40,14 +40,14 @@ return (
                 <SwiperSlide key={item.title}>
                     <div className='flex flex-col gap-6 mb-20 group relative shadow-lg text-white font-bold rounded-xl px-6 py-8 h-[250px] w-[250px] lg:h-[300px] lg:w-[250px]  overflow-hidden cursor-pointer'>
 
-                        <div className='absolute inset-0  bg-cover bg-center' style= {{ backgroundImage: `url(${item.backgroundImage})`}}/>
+                        <div className='absolute inset-0  bg-cover bg-center' style= {{ backgroundImage: `url(https://res.cloudinary.com/dzppqa6a9/image/upload/v1713402048/fondo_tarjeta_f9geu2.png)`}}/>
 
                         <div className='absolute inset-0 bg-black opacity-10 group-hover:opacity-50'/>
                         <div className=' relative flex flex-col gap-3 '>
                             {/* //!para el icono */}
                             {/* <item.icon className='text-blue-600 group-hover:text-charly w-[32px] h-[32px]'/> */}
                             <MdOutlineLocalPharmacy className='text-blue-600 group-hover:text-charly w-[32px] h-[32px]' />
-                            <h1 className='text-xl lg:text-2xl text-blue-600 group-hover:text-white'>{item.title}</h1>
+                            <h1 className='text-xl lg:text-2xl  group-hover:text-blue-400'>{item.title}</h1>
                             <p className='lg-text-[18px] t'>{item.content1}</p>
                             <p className='lg-text-[18px] t'>{item.content2}</p>
                             <p className='lg-text-[18px] t'>{item.content3}</p>
