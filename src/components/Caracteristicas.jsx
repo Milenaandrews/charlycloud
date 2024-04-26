@@ -15,16 +15,15 @@ import { caracteristicas } from '@/constants/caracteristicas'
 
 const Caracteristicas = () => {
 return (
-    <div className='flex items-center justify-center flex-col h-screen bg-grey-400 mb-20'>
-        <p className='text-blue-600 font-bold text-[30px] pb-8 pt-4'>¿Por qué elegir Charly Cloud para tu farmacia?</p>
+    <section id='caracteristicas' className='flex items-center pt-[70px] flex-col h-full bg-grey-400 '>
         <Swiper
             breakpoints={{
-                340: {
+                340:{
                     slidesPerView: 2,
-                    spaceBetween: 15,
-                },
+                    spaceBetween: 30,
+                    },
                 700: {
-                    slidesPerView: 3,
+                    slidesPerView: 4,
                     spaceBetween: 15
                 }
             }}
@@ -38,9 +37,9 @@ return (
             {caracteristicas.map((item)=> (
 
                 <SwiperSlide key={item.title}>
-                    <div className='flex flex-col gap-6 mb-20 group relative shadow-lg text-white font-bold rounded-xl px-6 py-8 h-[250px] w-[250px] lg:h-[300px] lg:w-[250px]  overflow-hidden cursor-pointer'>
+                    <div className='flex flex-col gap-10 mb-20 group relative shadow-lg ] text-white font-bold rounded-xl  px-6 py-8 h-[350px] w-[180px] sm:w-[250px] sm:h-[250px] lg:h-[300px] lg:w-[250px]  overflow-hidden cursor-pointer'>
 
-                        <div className='absolute inset-0  bg-cover bg-center' style= {{ backgroundImage: `url(https://res.cloudinary.com/dzppqa6a9/image/upload/v1713402048/fondo_tarjeta_f9geu2.png)`}}/>
+                        <div className='xs:h-[250px] absolute inset-0  bg-cover bg-center' style= {{ backgroundImage: `url(https://res.cloudinary.com/dzppqa6a9/image/upload/v1713402048/fondo_tarjeta_f9geu2.png)`}}/>
 
                         <div className='absolute inset-0 bg-black opacity-10 group-hover:opacity-50'/>
                         <div className=' relative flex flex-col gap-3 '>
@@ -59,7 +58,7 @@ return (
             ))}
         </Swiper>
 
-    </div>
+    </section>
   )
 }
 export default Caracteristicas

@@ -9,11 +9,11 @@ const AppBar = () => {
   const links = [
     {
       nombre: "Características",
-      href: "/"
+      href: "#caracteristicas"
     },
     {
       nombre: "Beneficios",
-      href: "/"
+      href: "#beneficios"
     },
     {
       nombre: "Planes",
