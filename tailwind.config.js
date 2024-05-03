@@ -29,7 +29,10 @@ module.exports = {
           },
             charly:{
               DEFAULT: "#0083ca"
-            }
+            },
+            charly2:{
+              DEFAULT: "rgb(8, 56, 247)"
+            },
         }
       }
     }

@@ -23,6 +23,10 @@ return (
                     spaceBetween: 30,
                     },
                 700: {
+                    slidesPerView: 3,
+                    spaceBetween: 15
+                },
+                1200: {
                     slidesPerView: 4,
                     spaceBetween: 15
                 }
@@ -37,7 +41,7 @@ return (
             {caracteristicas.map((item)=> (
 
                 <SwiperSlide key={item.title}>
-                    <div className='flex flex-col gap-10 mb-20 group relative shadow-lg ] text-white font-bold rounded-xl  px-6 py-8 h-[350px] w-[180px] sm:w-[250px] sm:h-[250px] lg:h-[300px] lg:w-[250px]  overflow-hidden cursor-pointer'>
+                    <div className='flex flex-col gap-10 mb-20 group relative shadow-lg ] text-white font-bold rounded-xl  px-6 py-8 h-[350px] w-[180px] sm:w-[250px] sm:h-[350px] lg:h-[350px] lg:w-[250px]  overflow-hidden cursor-pointer'>
 
                         <div className='xs:h-[250px] absolute inset-0  bg-cover bg-center' style= {{ backgroundImage: `url(https://res.cloudinary.com/dzppqa6a9/image/upload/v1713402048/fondo_tarjeta_f9geu2.png)`}}/>
 
