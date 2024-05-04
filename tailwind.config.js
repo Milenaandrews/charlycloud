@@ -32,6 +32,9 @@ module.exports = {
             },
             charly2:{
               DEFAULT: "rgb(8, 56, 247)"
+            },        
+            charly3:{
+              DEFAULT: "#2e34ae"
             },
         }
       }

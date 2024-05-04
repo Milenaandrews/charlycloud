@@ -17,7 +17,7 @@ const AppBar = () => {
     },
     {
       nombre: "Planes",
-      href: "/"
+      href: "#planes"
     },
     {
       nombre: "Contacto",
