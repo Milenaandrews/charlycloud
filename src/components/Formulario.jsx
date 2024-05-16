@@ -41,7 +41,7 @@ const Formulario = () => {
 
 
   return (
-    <div className='w-full h-full flex items-center justify-center py-10'>
+    <div id='form' className='w-full h-full flex items-center justify-center py-10'>
       <div className='flex bg-slate-700/70 rounded-xl w-auto h-auto flex-col items-center justify-center gap-4 p-3'>
           <h1>Formulario </h1>
           <Input className='w-80' type="text" label="Nombre de Contacto" required value ={user.nombre} name="nombre" onChange={changeMode} />

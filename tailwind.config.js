@@ -39,5 +39,9 @@ module.exports = {
         }
       }
     }
-  })],
+  }),
+  
+  require('daisyui'),
+  
+],
 }
