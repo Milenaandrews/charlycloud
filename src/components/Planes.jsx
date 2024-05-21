@@ -2,17 +2,24 @@ import React from 'react'
 
 const Planes = () => {
   return (
-    <section id='planes' className='h-[full] w-full flex flex-col items-center py-5 bg-gradient-to-r from-charly2 from-30% via-charly via-50% to-charly2 to-30%"'>
+    <section id='planes' className='h-full w-full flex flex-col py-10  bg-gradient-to-r from-charly2 from-30% via-charly via-50% to-charly2 to-30%"'>
 
-      <div>
-        <h1 className='text-white font-bold text-[20px] pb-10 '>planes</h1>
+      <div className='text-start pl-20'>
+        <p className='text-white font-bold text-[30px] pb-10 '>Una plataforma de software de farmacia diseñada por y para farmacéuticos. Simplemente , esto tiene DEMASIADO sentido.</p>
+      </div>
+      <div className='flex text-end w-[700px] flex-wrap content-end'>
+        <p className='text-white font-bold text-[30px] pb-10 '>Son años de experiencia tras el mesón . Entendemos tus desafíos y hemos encontrado las soluciones que realmente funcionan en una farmacia..</p>
+      </div>
+      <div className='flex text-end   '>
+        <p className='text-white font-bold text-[30px] pb-10 '>
+        Podemos hablar con propiedad, para ello hicimos un e-book.</p>
       </div>
 
-      <div className='grid grid-cols-1 sm:grid-cols-3 gap-10'>        
+      <div className='flex flex-row wrap gap-[70px] justify-center'>        
         <div className='h-[300px] w-[250px] bg-black rounded  transition hover:scale-125 hover:duration-500 '> </div>
         <div className='h-[300px] w-[250px] bg-black rounded transition hover:scale-125 hover:duration-500'></div>
         <div className='h-[300px] w-[250px] bg-black rounded transition hover:scale-125 hover:duration-500'></div>
-                
+        
       </div>
 
 

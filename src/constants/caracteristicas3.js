@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const caracteristicas = [
+export const caracteristicas3 = [
     {   id:1,
         title: "Gestión de inventario",
         content1: "Control de stock en tiempo real",

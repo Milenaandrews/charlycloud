@@ -4,6 +4,7 @@ import { motion, useTransform } from 'framer-motion'
 import { fadeIn } from './utils/motionTransition'
 import { useScroll } from "framer-motion"
 import Link from 'next/link'
+import { FaArrowCircleRight } from "react-icons/fa";
 
 
 
@@ -17,9 +18,9 @@ const Encabezado = () => {
 
 
     return (
-        <motion.div ref={ref} className='flex flex-col wrap gap-5 h-screen mx-0 px-0 w-screen xl:px-70 sm:px-20 bg-cover bg-center justify-center' style={{ backgroundImage: `url(https://res.cloudinary.com/dzppqa6a9/image/upload/v1713405556/nubes_charly_cloud_nawowy.png)` }}>
+        <motion.div ref={ref} className='flex flex-col wrap gap-5 h-full w-full py-10  xl:px-70  bg-cover bg-center justify-center' style={{ backgroundImage: `url(https://res.cloudinary.com/dzppqa6a9/image/upload/v1713405556/nubes_charly_cloud_nawowy.png)` }}>
             <div className=' flex justify-center ' >
-                <div className=' rounded  text-blue-900 text-xl '>
+                <div className=' text-blue-900 text-xl px-3'>
                     <h1 className='mb-10'><span className='text-[30px] font-bold'>Charly Cloud</span> </h1>
                     <h2 className='text-[55px] font-bold leading-relaxed '>La farmacia es un mundo complejo <br />
                         ¿Tu software también?<br />
@@ -28,9 +29,9 @@ const Encabezado = () => {
 
                 </div>
             </div>
-            <div className='flex justify-end pr-52'>
+            <div className='flex justify-end md:pr-52 pr-3'>
                 <Link href={'#form'}>
-                    <button className="btn btn-info btn-lg text-white rounded-xl"    >MAS INFO</button>
+                    <button className="btn btn-info btn-lg text-white rounded-xl">MÁS INFO  <FaArrowCircleRight className='scale-150' /></button>
                 </Link>
             </div>
             {/* <motion.div style={{y:sm}} variants={fadeIn("right", 0.5)} initial="hidden" animate="show" exit="hidden">

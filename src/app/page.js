@@ -4,6 +4,7 @@ import Beneficios from "../components/Beneficios";
 import Caracteristicas from "../components/Caracteristicas";
 import Planes from "../components/Planes";
 import  ByC  from "@/components/ByC";
+import Footer from "@/components/Footer";
 
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
       <ByC/>     
       <Planes/>
       <Formulario/>
+      <Footer/>
       
       
     </div>
