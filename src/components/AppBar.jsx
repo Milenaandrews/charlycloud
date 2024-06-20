@@ -8,14 +8,6 @@ const AppBar = () => {
     
   const links = [
     {
-      nombre: "Características",
-      href: "#caracteristicas"
-    },
-    {
-      nombre: "Beneficios",
-      href: "#beneficios"
-    },
-    {
       nombre: "Planes",
       href: "#planes"
     },

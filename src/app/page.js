@@ -1,17 +1,16 @@
 import Encabezado from "../components/Encabezado";
 import Formulario from "../components/Formulario";
-import Beneficios from "../components/Beneficios";
-import Caracteristicas from "../components/Caracteristicas";
+// import Beneficios from "../components/Beneficios";
 import Planes from "../components/Planes";
-import  ByC  from "@/components/ByC";
 import Footer from "@/components/Footer";
+import { BeneficiosCaracteristicas } from "@/components/BeneficiosCaracteristicas";
 
 
 export default function Home() {
   return (
     <div>
       <Encabezado/>
-      <ByC/>     
+      <BeneficiosCaracteristicas/>     
       <Planes/>
       <Formulario/>
       <Footer/>
