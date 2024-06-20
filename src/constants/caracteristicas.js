@@ -11,7 +11,7 @@ export const caracteristicas  = [
         title: "2",
         content1: "Gestión de clientes y fidelización",
         content2: "Descuentos personalizados y promociones",
-        backgroundImage: "https://res.cloudinary.com/dzppqa6a9/image/upload/v1713395849/3_s1gxeq.jpg"
+        backgroundImage: "https://images.unsplash.com/photo-1585435557343-3b092031a831?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     
     {   id:3,
@@ -30,7 +30,7 @@ export const caracteristicas  = [
         title: "5",
         content1: "Gestión de clientes y fidelización",
         content2: "Descuentos personalizados y promociones",
-        backgroundImage: "https://res.cloudinary.com/dzppqa6a9/image/upload/v1713395849/3_s1gxeq.jpg"
+        backgroundImage: "https://images.unsplash.com/photo-1585435557343-3b092031a831?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     
     {   id:6,
@@ -49,7 +49,7 @@ export const caracteristicas  = [
         title: "8",
         content1: "Gestión de clientes y fidelización",
         content2: "Descuentos personalizados y promociones",
-        backgroundImage: "https://res.cloudinary.com/dzppqa6a9/image/upload/v1713395849/3_s1gxeq.jpg"
+        backgroundImage: "https://images.unsplash.com/photo-1585435557343-3b092031a831?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     
     {   id:9,

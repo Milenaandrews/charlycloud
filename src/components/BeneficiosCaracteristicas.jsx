@@ -8,7 +8,7 @@ export const BeneficiosCaracteristicas = () => {
 
     const [toggle, setToggle] = useState(caracteristicas[0].id)
     const [toggle2, setToggle2] = useState(caracteristicas[4].id)
-    const [toggle3, setToggle3] = useState(caracteristicas[7].id)
+    const [toggle3, setToggle3] = useState(caracteristicas[6].id)
 
     return (
         <section className='h-full w-full bg-red py-[80px] text-white'>
@@ -20,7 +20,7 @@ export const BeneficiosCaracteristicas = () => {
             <div className='flex flex-row flex-wrap items-center justify-center gap-[20px] md:gap-[100px] '>
                 <div className='px-3'>
                     {caracteristicas.slice(0, 3).map(({ backgroundImage, id }) => (
-                        toggle === id ? (<Image key={id} className='rounded-box ' src={backgroundImage} width={400} height={300} alt='imagen' />) : null
+                        toggle === id ? (<Image key={id} className='rounded-box ' src={backgroundImage} defaultChecked={toggle === id} width={400} height={300} alt='imagen' />) : null
                     ))}
                 </div>
                 <div>
@@ -54,7 +54,7 @@ export const BeneficiosCaracteristicas = () => {
             <div className='flex flex-row-reverse md:flex-row flex-wrap items-center justify-center gap-[20px] md:gap-[100px] '>
                 <div className='flex flex-row flex-wrap items-center justify-center gap-[20px] md:gap-[100px] '>
                     <div>
-                        {caracteristicas.slice(3,6).map(({ content1, title, id }) => (
+                        {caracteristicas.slice( 3, 6 ).map(({ content1, title, id }) => (
                             <div key={id}>
                                 <div className="flex justify-center items-center">
                                     <div className="collapse collapse-plus bg-charly2/40 w-full md:w-[500px] text-white">
@@ -71,7 +71,7 @@ export const BeneficiosCaracteristicas = () => {
                         ))}
                     </div>
                     <div className='px-3'>
-                        {caracteristicas.slice(3,6).map(({ backgroundImage, id }) => (
+                        {caracteristicas.slice(3, 6).map(({ backgroundImage, id }) => (
                             toggle2 === id ? (<Image key={id} className='rounded-box ' src={backgroundImage} width={400} height={300} alt='imagen' />) : null
                         ))}
                     </div>
