@@ -5,7 +5,7 @@ export const ButtonMasInfo = () => {
     return (
         <div>
             <Link href={'#form'}>
-                <button className="btn btn-info btn-lg text-white rounded-xl">MÁS INFO  <FaArrowCircleRight className='scale-150' /></button>
+                <button className="btn  btn-secondary btn-lg text-primary text-[20px] rounded-[40px]">MÁS INFO  <FaArrowCircleRight className='scale-150' /></button>
             </Link>
         </div>
     )

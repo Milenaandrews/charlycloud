@@ -12,7 +12,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':  'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       textShadow: {
         'blue': '4px 4px 4px  rgba(17, 130, 206, 1)',
@@ -22,6 +22,24 @@ module.exports = {
     darkMode: "class",
     plugins: [nextui()],
   },
+
+  daisyui: {
+    themes: [
+      {
+        mytheme: {
+
+          "primary": "#0083ca",
+          "secondary": "#ffffff",
+          "accent": "#000241",
+
+          
+
+          
+        },
+      },
+    ],
+  },
+
   plugins: [
     nextui({
       themes: {
@@ -29,26 +47,26 @@ module.exports = {
           colors: {
             secondary: {
               DEFAULT: "#f5741c",
-          },
-            charly:{
+            },
+            charly: {
               DEFAULT: "#0083ca"
             },
-            charly2:{
+            charly2: {
               DEFAULT: "rgb(8, 56, 247)"
-            },        
-            charly3:{
+            },
+            charly3: {
               DEFAULT: "#2e34ae"
             },
-            charly4:{
+            charly4: {
               DEFAULT: "rgba(17, 130, 206, 1)'"
 
             }
+          }
         }
       }
-    }
-  }),
-  
-  require('daisyui'),
-  require('tailwindcss-textshadow')
-],
+    }),
+
+    require('daisyui'),
+    require('tailwindcss-textshadow')
+  ],
 }
