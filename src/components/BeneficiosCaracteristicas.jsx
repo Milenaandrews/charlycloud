@@ -12,7 +12,7 @@ export const BeneficiosCaracteristicas = () => {
     const [toggle3, setToggle3] = useState(caracteristicas[6].id)
 
     return (
-        <section className='h-full w-full py-[30px] text-white bg-[url("https://res.cloudinary.com/dzppqa6a9/image/upload/v1719448479/polygon-scatter-haikei_uidb6r.png")]  bg-repeat '>
+        <section className='h-full w-full py-[30px] text-white bg-[url("https://res.cloudinary.com/dzppqa6a9/image/upload/v1719454459/polygon-scatter-haikei_1_qop9tx.png")]  bg-repeat '>
             <div className=' flex flex-col wrap items-center '>
                 <h2 className='text-[30px] text-white md:px-[200px]  text-center font-extrabold text-balance '> <span className='text-[60px]'>Charly Cloud</span> <br /> Es intuitivo y fácil de usar ayudando a las farmacias a rentabilizar, organizar, brindar la mejor atención a sus pacientes y cumplir con las normativas legales.  </h2>
             </div>

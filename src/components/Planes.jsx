@@ -1,4 +1,4 @@
-
+'use client'
 const Planes = () => {
   return (
     <section id='planes' className='h-full w-full flex flex-col py-10  bg-gradient-to-r from-charly2 from-30% via-charly via-50% to-charly2 to-30%"'>
