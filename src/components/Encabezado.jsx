@@ -5,6 +5,7 @@ import { motion, useTransform } from 'framer-motion'
 import { useScroll } from "framer-motion"
 import Link from 'next/link'
 import { FaArrowCircleRight } from "react-icons/fa";
+import { Button } from '@nextui-org/react'
 
 
 const Encabezado = () => {
@@ -30,7 +31,7 @@ const Encabezado = () => {
                     <div className='flex justify-center items-center pt-[30px]'>
                         <div>
                             <Link href={'#form'}>
-                                <button className="btn btn-outline btn-secondary btn-lg text-white rounded-[40px]">MÁS INFO  <FaArrowCircleRight className='scale-150' /></button>
+                                <Button className="text-white rounded-[40px] font-extrabold " size="lg" color="primary" variant="ghost">MÁS INFO  <FaArrowCircleRight className='scale-150' /></Button>
                             </Link>
                         </div>
                     </div>

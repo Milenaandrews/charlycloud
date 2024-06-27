@@ -17,6 +17,9 @@ module.exports = {
       textShadow: {
         'blue': '4px 4px 4px  rgba(17, 130, 206, 1)',
       },
+      boxShadow: {
+        '3xl': '0 35px 60px -5px rgba(0, 0, 0, 0.3)',
+      }
 
     },
     darkMode: "class",
@@ -32,9 +35,9 @@ module.exports = {
           "secondary": "#ffffff",
           "accent": "#000241",
 
-          
 
-          
+
+
         },
       },
     ],
@@ -58,8 +61,13 @@ module.exports = {
               DEFAULT: "#2e34ae"
             },
             charly4: {
-              DEFAULT: "rgba(17, 130, 206, 1)'"
-
+              DEFAULT: "#d6e6f1"
+            },
+            charly5:{
+              DEFAULT:"#093d5f"
+            },
+            charly6:{
+              DEFAULT:"#0083ca"
             }
           }
         }

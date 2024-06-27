@@ -1,58 +1,58 @@
 
 export const caracteristicas  = [
-    {   id:1,
+    {   id:'1',
         title: "1",
         content1: "Control de stock en tiempo real",
         content2: "Reducción de perdidas",
         content3: "Traspasos entre farmacias",
         backgroundImage: "https://res.cloudinary.com/dzppqa6a9/image/upload/v1713395849/3_s1gxeq.jpg"
     },
-    {   id:2,
+    {   id:'2',
         title: "2",
         content1: "Gestión de clientes y fidelización",
         content2: "Descuentos personalizados y promociones",
         backgroundImage: "https://images.unsplash.com/photo-1585435557343-3b092031a831?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     
-    {   id:3,
+    {   id:'3',
         title: "3",
         content1: "Informes de ventas, inventario y clientes",
         backgroundImage: "https://res.cloudinary.com/dzppqa6a9/image/upload/v1713395850/6_emk6mt.jpg"
     },
-    {   id:4,
+    {   id:'4',
         title: "4",
         content1: "Control de stock en tiempo real",
         content2: "Reducción de perdidas",
         content3: "Traspasos entre farmacias",
         backgroundImage: "https://res.cloudinary.com/dzppqa6a9/image/upload/v1713395849/3_s1gxeq.jpg"
     },
-    {   id:5,
+    {   id:'5',
         title: "5",
         content1: "Gestión de clientes y fidelización",
         content2: "Descuentos personalizados y promociones",
         backgroundImage: "https://images.unsplash.com/photo-1585435557343-3b092031a831?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     
-    {   id:6,
+    {   id:'6',
         title: "6",
         content1: "Informes de ventas, inventario y clientes",
         backgroundImage: "https://res.cloudinary.com/dzppqa6a9/image/upload/v1713395850/6_emk6mt.jpg"
     },
-    {   id:7,
+    {   id:'7',
         title: "7",
         content1: "Control de stock en tiempo real",
         content2: "Reducción de perdidas",
         content3: "Traspasos entre farmacias",
         backgroundImage: "https://res.cloudinary.com/dzppqa6a9/image/upload/v1713395849/3_s1gxeq.jpg"
     },
-    {   id:8,
+    {   id:'8',
         title: "8",
         content1: "Gestión de clientes y fidelización",
         content2: "Descuentos personalizados y promociones",
         backgroundImage: "https://images.unsplash.com/photo-1585435557343-3b092031a831?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     
-    {   id:9,
+    {   id:'9',
         title: "9",
         content1: "Informes de ventas, inventario y clientes",
         backgroundImage: "https://res.cloudinary.com/dzppqa6a9/image/upload/v1713395850/6_emk6mt.jpg"

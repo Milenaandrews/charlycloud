@@ -3,6 +3,8 @@ import { caracteristicas } from '@/constants/caracteristicas'
 import Image from 'next/image'
 import { useState } from 'react'
 import { ButtonMasInfo } from './ButtonMasInfo'
+
+import { Accordion, AccordionItem } from "@nextui-org/accordion";
 export const BeneficiosCaracteristicas = () => {
 
     const [toggle, setToggle] = useState(caracteristicas[0].id)
@@ -10,7 +12,7 @@ export const BeneficiosCaracteristicas = () => {
     const [toggle3, setToggle3] = useState(caracteristicas[6].id)
 
     return (
-        <section className='h-full w-full py-[30px] text-white'>
+        <section className='h-full w-full py-[30px] text-white bg-[url("https://res.cloudinary.com/dzppqa6a9/image/upload/v1719448479/polygon-scatter-haikei_uidb6r.png")]  bg-repeat '>
             <div className=' flex flex-col wrap items-center '>
                 <h2 className='text-[30px] text-white md:px-[200px]  text-center font-extrabold text-balance '> <span className='text-[60px]'>Charly Cloud</span> <br /> Es intuitivo y fácil de usar ayudando a las farmacias a rentabilizar, organizar, brindar la mejor atención a sus pacientes y cumplir con las normativas legales.  </h2>
             </div>
@@ -22,24 +24,22 @@ export const BeneficiosCaracteristicas = () => {
             </div>
 
             <div className='flex flex-row flex-wrap items-center justify-center gap-[20px] md:gap-[100px] '>
-                <div className='px-3'>
+                <div className='px-3 min-h-[400px] flex items-center justify-center'>
                     {caracteristicas.slice(0, 3).map(({ backgroundImage, id }) => (
-                        toggle === id ? (<Image key={id} className='rounded-box ' src={backgroundImage} width={400} height={300} alt='imagen' />) : null))}
+                        toggle === id ? (<Image key={id} className='rounded-xl shadow-3xl' src={backgroundImage} width={400} height={400} alt='imagen' />) : null))}
                 </div>
                 <div>
                     {caracteristicas.slice(0, 3).map(({ content1, title, id }) => (
                         <div key={id}>
-                            <div className="flex justify-center items-center">
-                                <div className="collapse collapse-plus bg-charly2/40 w-full md:w-[500px]">
-                                    <input type="radio" name="my-accordion-1" defaultChecked={toggle === id} onClick={() => setToggle(id)} />
-                                    <div className="collapse-title text-xl font-medium">
-                                        <h1>{title}</h1>
-                                    </div>
-                                    <div className="collapse-content ">
-                                        <p>{content1} </p>
-                                    </div>
-                                </div>
-                            </div>
+
+                            <Accordion className=' bg-charly4 rounded-[10px]  min-w-[300px]  md:min-w-[500px] text-charly5 ' defaultExpandedKeys={['1']}>
+                                <AccordionItem key={id} className=' text-charly5 ' aria-label="Accordion 1" title={title} onPress={() => setToggle(id)} >
+                                    {content1}
+                                </AccordionItem>
+                            </Accordion>
+
+
+
                         </div>
                     ))}
                 </div>
@@ -65,17 +65,11 @@ export const BeneficiosCaracteristicas = () => {
                     <div>
                         {caracteristicas.slice(3, 6).map(({ content1, title, id }) => (
                             <div key={id}>
-                                <div className="flex justify-center items-center">
-                                    <div className="collapse collapse-plus bg-charly2/40 w-full md:w-[500px] text-white">
-                                        <input type="radio" name="my-accordion-2" defaultChecked={toggle2 === id} onClick={() => setToggle2(id)} />
-                                        <div className="collapse-title text-xl font-medium">
-                                            <h1>{title}</h1>
-                                        </div>
-                                        <div className="collapse-content ">
-                                            <p>{content1} </p>
-                                        </div>
-                                    </div>
-                                </div>
+                                <Accordion className=' bg-charly4 rounded-[10px] min-w-[300px]  md:min-w-[500px] text-charly5 ' defaultExpandedKeys={['4']} >
+                                    <AccordionItem key={id} className=' text-charly5 ' aria-label="Accordion 2" title={title} onPress={() => setToggle2(id)} >
+                                        {content1}
+                                    </AccordionItem>
+                                </Accordion>
                             </div>
                         ))}
                     </div>
@@ -86,7 +80,7 @@ export const BeneficiosCaracteristicas = () => {
                     </div>
                 </div>
 
-                <div className='flex flex-col  gap-10 md:flex-row items-center justify-evenly text-balance py-10'>
+                <div className='flex flex-col gap-10 md:flex-row items-center justify-evenly text-balance py-10'>
                     <p className='text-[40px] p-4 md:p-0 md:w-[700px] font-extrabold text-center'>Tus pacientes conectados a tu farmacia, descubre como</p>
                     <div >
                         <ButtonMasInfo />
@@ -110,25 +104,19 @@ export const BeneficiosCaracteristicas = () => {
                 <div>
                     {caracteristicas.slice(6, 9).map(({ content1, title, id }) => (
                         <div key={id}>
-                            <div className="flex justify-center items-center">
-                                <div className="collapse collapse-plus bg-charly2/40 w-full md:w-[500px] text-white">
-                                    <input type="radio" name="my-accordion-3" defaultChecked={toggle3 === id} onClick={() => setToggle3(id)} />
-                                    <div className="collapse-title text-xl font-medium">
-                                        <h1>{title}</h1>
-                                    </div>
-                                    <div className="collapse-content ">
-                                        <p>{content1} </p>
-                                    </div>
-                                </div>
-                            </div>
+                            <Accordion className=' bg-charly4 rounded-[10px] min-w-[300px]  md:min-w-[500px] text-charly5 ' defaultExpandedKeys={['7']} >
+                                <AccordionItem key={id} className=' text-charly5 ' aria-label="Accordion 3" title={title} onPress={() => setToggle3(id)} >
+                                    {content1}
+                                </AccordionItem>
+                            </Accordion>
                         </div>
                     ))}
                 </div>
             </div>
             <div className='flex flex-col  md:flex-row items-center justify-evenly text-balance py-10 '>
                 <p className='text-[40px] p-4 md:p-0 md:w-[700px] font-extrabold text-center'>Construye relaciones sólidas con tus pacientes con nuestro e-book</p>
-                
-                <ButtonMasInfo/>
+
+                <ButtonMasInfo />
 
             </div>
 
