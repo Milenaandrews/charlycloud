@@ -3,23 +3,26 @@ const Planes = () => {
   return (
     <section id='planes' className='h-full w-full flex flex-col py-10  bg-charly1 bg-cover'>
 
-        <div className=''>
-          <h1 className='text-white font-bold text-[50px] text-center pb-16 '> ELIGUE TU PLAN </h1>
-        </div>
-       
 
-        <div className='flex flex-col md:flex-row wrap gap-[100px] justify-center items-center'>        
-          <div className='h-[400px] w-[300px] bg-[#083d5f] rounded-[20px] transition hover:scale-125 hover:duration-500'>
-            <h1 className="text-center text-white font-bold pt-5 text-[20px]">Básico</h1>
-          </div>
-          <div className='h-[400px] w-[300px] bg-[#083d5f] rounded-[20px] transition hover:scale-125 hover:duration-500'>
-            <h1 className="text-center text-white font-bold pt-5 text-[20px]" >Básico Plus </h1>
-          </div>
-          <div className='h-[400px] w-[300px] bg-[#083d5f] rounded-[20px] transition hover:scale-125 hover:duration-500'>
-            <h1 className="text-center text-white font-bold pt-5 text-[20px]">Full</h1>
-          </div>
-          
+      <h1 className='text-white font-bold text-[50px] text-center pb-16  '> ELIGUE TU PLAN </h1>
+
+      <div className='flex flex-col md:flex-row wrap gap-[100px] justify-center items-center '>
+        <div className='h-[400px] w-[300px] bg-[#083d5f] rounded-[20px] transition hover:scale-125 hover:duration-500'>
+          <h1 className="text-center text-white font-bold pt-5 text-[20px]">Básico</h1>
         </div>
+        <div className='h-[400px] w-[300px] bg-[#083d5f] rounded-[20px] transition hover:scale-125 hover:duration-500'>
+          <h1 className="text-center text-white font-bold pt-5 text-[20px]" >Básico Plus </h1>
+        </div>
+        <div className='h-[400px] w-[300px] bg-[#083d5f] rounded-[20px] transition hover:scale-125 hover:duration-500'>
+          <h1 className="text-center text-white font-bold pt-5 text-[20px]">Full</h1>
+        </div>
+
+      </div>
+      <div className="flex flex-col text-white items-center pt-14 font-semibold text-center gap-10 px-3">
+        <h2 className=" text-[50px]">Beneficios adicionales</h2>
+        <p className=" text-[30px]">Integras un programa de beneficios exclusivo para clientes</p>
+        <p className=" text-[30px]">Acceso a talleres gratuitos en negocio y medioambientales del rubro Farmacéutico</p>
+      </div>
 
 
     </section>
