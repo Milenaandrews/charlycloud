@@ -121,9 +121,9 @@ export const BeneficiosCaracteristicas = () => {
                 <p className='text-[40px] p-4 md:p-0 md:w-[700px] font-extrabold text-center'>Construye relaciones sólidas con tus ​pacientes con nuestro e-book</p>
             </div>
             <div className='flex flex-col items-center gap-10'>
-                <h1 className='text-[60px] font-black'>Cumple las reglas del juego: Evita multas</h1>
-                <div className='flex flex-col md:flex-row  gap-10 px-[30px]'>
-                    <p className='text-[30px] text-center w-[400px]'>La nueva normativa del ISPCH para las farmacias implica conocer la trazabilidad de punta a punta de los medicamentos. </p>
+                <h1 className='text-[60px] font-black text-center'>Cumple las reglas del juego: Evita multas</h1>
+                <div className='flex flex-col items-center md:flex-row  gap-10 px-[30px]'>
+                    <p className='text-[30px] text-center md:w-[400px]'>La nueva normativa del ISPCH para las farmacias implica conocer la trazabilidad de punta a punta de los medicamentos. </p>
                     <Image src="https://upload.wikimedia.org/wikipedia/commons/0/02/Logotipo_del_Instituto_de_Salud_P%C3%BAblica_de_Chile.png" width={300} height={200} className=''/>
                 </div>
 

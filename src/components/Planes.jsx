@@ -1,25 +1,25 @@
 'use client'
 const Planes = () => {
   return (
-    <section id='planes' className='h-full w-full flex flex-col py-10  bg-gradient-to-r from-charly2 from-30% via-charly via-50% to-charly2 to-30%"'>
+    <section id='planes' className='h-full w-full flex flex-col py-10  bg-charly1 bg-cover'>
 
-        {/* <div className='text-start pl-20'>
-          <p className='text-white font-bold text-[30px] pb-10 '>Una plataforma de software de farmacia diseñada por y para farmacéuticos. Simplemente , esto tiene DEMASIADO sentido.</p>
+        <div className=''>
+          <h1 className='text-white font-bold text-[50px] text-center pb-16 '> ELIGUE TU PLAN </h1>
         </div>
-        <div className='flex text-end  flex-wrap content-end'>
-          <p className='text-white font-bold text-[30px] pb-10 '>Son años de experiencia tras el mesón . Entendemos tus desafíos y hemos encontrado las soluciones que realmente funcionan en una farmacia..</p>
-        </div>
-        <div className='flex text-end   '>
-          <p className='text-white font-bold text-[30px] pb-10 '>
-          Podemos hablar con propiedad, para ello hicimos un e-book.</p>
-        </div>
+       
 
-        <div className='flex flex-col md:flex-row wrap gap-[70px] justify-center'>        
-          <div className='h-[300px] w-[250px] bg-black rounded  transition hover:scale-125 hover:duration-500 '> </div>
-          <div className='h-[300px] w-[250px] bg-black rounded transition hover:scale-125 hover:duration-500'></div>
-          <div className='h-[300px] w-[250px] bg-black rounded transition hover:scale-125 hover:duration-500'></div>
+        <div className='flex flex-col md:flex-row wrap gap-[100px] justify-center items-center'>        
+          <div className='h-[400px] w-[300px] bg-[#083d5f] rounded-[20px] transition hover:scale-125 hover:duration-500'>
+            <h1 className="text-center text-white font-bold pt-5 text-[20px]">Básico</h1>
+          </div>
+          <div className='h-[400px] w-[300px] bg-[#083d5f] rounded-[20px] transition hover:scale-125 hover:duration-500'>
+            <h1 className="text-center text-white font-bold pt-5 text-[20px]" >Básico Plus </h1>
+          </div>
+          <div className='h-[400px] w-[300px] bg-[#083d5f] rounded-[20px] transition hover:scale-125 hover:duration-500'>
+            <h1 className="text-center text-white font-bold pt-5 text-[20px]">Full</h1>
+          </div>
           
-        </div> */}
+        </div>
 
 
     </section>
