@@ -4,7 +4,7 @@ import Formulario from "../components/Formulario";
 import Planes from "../components/Planes";
 import Footer from "@/components/Footer";
 import  {BeneficiosCaracteristicas} from "@/components/BeneficiosCaracteristicas";
-import ISPSection from "@/components/ISPSection";
+import { FinalCaracteristicas } from "@/components/FinalCaracteristicas";
 
 
 
@@ -12,8 +12,8 @@ export default function Home() {
   return (
     <div>
       <Encabezado/>
-      <BeneficiosCaracteristicas/> 
-      <ISPSection/>  
+      <BeneficiosCaracteristicas/>
+      <FinalCaracteristicas/> 
       <Planes/>
       <Formulario/>
       <Footer/>
