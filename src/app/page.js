@@ -5,6 +5,7 @@ import Planes from "../components/Planes";
 import Footer from "@/components/Footer";
 import  {BeneficiosCaracteristicas} from "@/components/BeneficiosCaracteristicas";
 import { FinalCaracteristicas } from "@/components/FinalCaracteristicas";
+import { Pildomatch } from "@/components/Pildomatch";
 
 
 
@@ -16,6 +17,7 @@ export default function Home() {
       <FinalCaracteristicas/> 
       <Planes/>
       <Formulario/>
+      <Pildomatch/>
       <Footer/>
       
       

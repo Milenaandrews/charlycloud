@@ -13,11 +13,12 @@ const AppBar = () => {
     },
     {
       nombre: "Contacto",
-      href: "/"
+      href: "#form"
     },
   ]
   return (
     <Navbar className="bg-gray-200/80">
+
       {/* Navbar XS */}
       <NavbarContent className="sm:hidden" justify="start">
         <NavbarMenuToggle />
@@ -44,7 +45,7 @@ const AppBar = () => {
       </NavbarMenu>
 
       {/* Navbar XL */}
-      <NavbarContent className="hidden sm:flex gap-4" justify="start">
+      <NavbarContent className="hidden sm:flex gap-4 justify-start">
         <NavbarBrand>
           <NavbarItem>
             <Image alt="logo" src="https://res.cloudinary.com/dzppqa6a9/image/upload/v1709075705/logocharlysinfondo_omzz7l.png" width={100} height={300} />
@@ -54,9 +55,7 @@ const AppBar = () => {
             <p className="font-bold text-charly">Charly Cloud &#174;</p>
           </Link>
         </NavbarBrand>
-
       </NavbarContent>
-
 
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         {links.map((link, i) => (
