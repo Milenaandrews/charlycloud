@@ -42,7 +42,7 @@ const Formulario = () => {
 
 
   return (
-    <section id='form' className='flex w-full h-[700px] md:h-[750px]  flex-col items-center gap-10  bg-[url(https://res.cloudinary.com/dzppqa6a9/image/upload/v1721235265/Cloudy_2_gph239.svg)] bg-cover md:pt-14'>
+    <section id='form' className='flex w-full h-[700px] lg:h-[750px]  flex-col items-center gap-10  bg-[url(https://res.cloudinary.com/dzppqa6a9/image/upload/v1721235265/Cloudy_2_gph239.svg)] bg-cover md:pt-14'>
 
         <p className='text-[30px] text-white font-bold  text-center px-4'> Llena tus datos y te regalamos nuestro e-book</p>
       

@@ -3,30 +3,43 @@ import { caracteristicas } from '@/constants/caracteristicas'
 import Image from 'next/image'
 import { useRef, useState } from 'react'
 import { ButtonMasInfo } from './ButtonMasInfo'
+import { fadeIn } from './utils/motionTransition'
 
 import { Accordion, AccordionItem } from "@nextui-org/accordion";
-//import { useScroll, useTransform, motion } from 'framer-motion'
+import { useScroll, useTransform, motion } from 'framer-motion'
 export const BeneficiosCaracteristicas = () => {
 
     const [toggle, setToggle] = useState(caracteristicas[0].id)
     const [toggle2, setToggle2] = useState(caracteristicas[3].id)
     const [toggle3, setToggle3] = useState(caracteristicas[6].id)
-    
 
 
-    // const ref = useRef();
-    // const { scrollYProgress } = useScroll({
-    //     target: ref,
-    //     offset: ["start start", "end center "]
-    // });
-    // const y = useTransform(scrollYProgress, [0, 1], [ "0%", "40%"]);
+
+    const ref = useRef();
+    const { scrollYProgress } = useScroll({
+        target: ref,
+        //offset: ["start start", "end center "] configuracion para parallex
+        offset: ["start end", "end start"]
+    });
+    const y = useTransform(scrollYProgress, [0, 1], ["0%", "40%"]);
+    const opacity = useTransform(
+        scrollYProgress,
+        [0, 0.5, 1],
+        [0, 1, 0],
+    )
 
 
 
 
     return (
-        <section className=' h-full w-full py-[30px] text-white bg-[url("https://res.cloudinary.com/dzppqa6a9/image/upload/v1721181856/Rect_Light_wpdt8h.svg")] bg-repeat-y bg-cover bg-center px-5 lg:px-0 '>
-            
+        <section ref={ref} className=' h-full w-full py-[30px] text-white bg-[url("https://res.cloudinary.com/dzppqa6a9/image/upload/v1721181856/Rect_Light_wpdt8h.svg")] bg-repeat-y bg-cover bg-center px-5 lg:px-0 '>
+
+            <motion.div 
+                variants={ opacity }
+                initial= "initial"
+                whileInView="animate"
+                    >
+
                 <div className=' flex flex-col wrap items-center '>
                     <h2 className='text-[30px] text-white lg:px-[200px]  text-center font-extrabold text-balance '> <span className='text-[60px]'>Charly Cloud</span> <br /> Es intuitivo y fácil de usar ayudando a las farmacias a rentabilizar, organizar, brindar la mejor atención a sus pacientes y cumplir con las normativas legales.  </h2>
                 </div>
@@ -43,16 +56,17 @@ export const BeneficiosCaracteristicas = () => {
                             toggle === id ? (<Image key={id} className='rounded-xl ' src={backgroundImage} width={400} height={400} alt='imagen' />) : null))}
                     </div>
                     <div>
-                        {caracteristicas.slice(0, 3).map(({ content1, title, id }) => (
-                            <div key={id}>
 
-                                <Accordion className=' bg-charly4 rounded-[10px]  min-w-[300px]   lg:max-w-[600px] lg:min-w-[600px] text-charly5 ' defaultExpandedKeys={['1']}>
-                                    <AccordionItem key={id} className=' text-charly5 p-5' selectionMode="" aria-label="Accordion 1" title={title} onPress={() => setToggle(id)} >
+                        <div >
+                            <Accordion className=' bg-charly4 rounded-[10px]  min-w-[300px]   lg:max-w-[600px] lg:min-w-[600px] text-charly5 ' defaultExpandedKeys={['1']}>
+                                {caracteristicas.slice(0, 3).map(({ content1, title, id }) => (
+                                    <AccordionItem key={id} variant="splitted" className=' text-charly5 p-5' aria-label={`Accordion ${id}`} title={title} onPress={() => setToggle(id)} >
                                         {content1}
                                     </AccordionItem>
-                                </Accordion>
-                            </div>
-                        ))}
+
+                                ))}
+                            </Accordion>
+                        </div>
                     </div>
                 </div>
 
@@ -74,15 +88,15 @@ export const BeneficiosCaracteristicas = () => {
                 <div className='flex flex-col flex-wrap items-center justify-center gap-[20px] lg:gap-[10px] '>
                     <div className='flex flex-row flex-wrap items-center justify-center gap-[20px] lg:gap-[100px] '>
                         <div>
-                            {caracteristicas.slice(3, 6).map(({ content1, title, id }) => (
-                                <div key={id}>
-                                    <Accordion className=' bg-charly4 rounded-[10px] min-w-[300px]  lg:min-w-[600px] lg:max-w-[600px] text-charly5 ' defaultExpandedKeys={['4']} >
-                                        <AccordionItem key={id} className=' text-charly5 p-5 ' aria-label="Accordion 2" title={title} onPress={() => setToggle2(id)} >
+                            <div>
+                                <Accordion className=' bg-charly4 rounded-[10px] min-w-[300px]  lg:min-w-[600px] lg:max-w-[600px] text-charly5 ' defaultExpandedKeys={['4']} >
+                                    {caracteristicas.slice(3, 6).map(({ content1, title, id }) => (
+                                        <AccordionItem key={id} className=' text-charly5 p-5 ' aria-label={`Accordion ${id}`} title={title} onPress={() => setToggle2(id)} >
                                             {content1}
                                         </AccordionItem>
-                                    </Accordion>
-                                </div>
-                            ))}
+                                    ))}
+                                </Accordion>
+                            </div>
                         </div>
                         <div className='px-3'>
                             {caracteristicas.slice(3, 6).map(({ backgroundImage, id }) => (
@@ -114,15 +128,15 @@ export const BeneficiosCaracteristicas = () => {
                         ))}
                     </div>
                     <div>
-                        {caracteristicas.slice(6, 9).map(({ content1, title, id }) => (
-                            <div key={id}>
-                                <Accordion className=' bg-charly4 rounded-[10px] min-w-[300px] lg:min-w-[600px]  lg:max-w-[600px]  text-charly5 ' defaultExpandedKeys={['7']} >
+                        <div>
+                            <Accordion className=' bg-charly4 rounded-[10px] min-w-[300px] lg:min-w-[600px]  lg:max-w-[600px]  text-charly5 ' defaultExpandedKeys={['7']} >
+                                {caracteristicas.slice(6, 9).map(({ content1, title, id }) => (
                                     <AccordionItem key={id} className=' text-charly5 p-5' aria-label="Accordion 3" title={title} onPress={() => setToggle3(id)} >
                                         {content1}
                                     </AccordionItem>
-                                </Accordion>
-                            </div>
-                        ))}
+                                ))}
+                            </Accordion>
+                        </div>
                     </div>
                 </div>
 
@@ -145,6 +159,11 @@ export const BeneficiosCaracteristicas = () => {
                         </div>
                     </div>
                 </div>
+
+
+            </motion.div>
+
+
         </section >
     )
 }
