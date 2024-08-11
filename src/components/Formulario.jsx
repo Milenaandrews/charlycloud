@@ -2,6 +2,7 @@
 import React, { useContext, useState } from 'react'
 import { Input, Button } from "@nextui-org/react"
 import ContactoContext from '@/context/Contacto/ContactoContext'
+import { errorAlert, successAlert } from './utils/toastify'
 
 
 
@@ -17,16 +18,23 @@ const Formulario = () => {
 
   const [user, setUser] = useState(initialValues)
 
+
+
   const handleContact = async (e) => {
     e.preventDefault();
     try {
+      
       await guardarContacto(user);
-      alert("registro existoso");
+      //alert("registro existoso");
+      successAlert()
       setUser(initialValues)
+    ;
 
     } catch (error) {
       console.error("Error durante el registro de usuario", error);
-      alert("registro fallido")
+      //alert("registro fallido")
+      errorAlert()
+      setUser(initialValues)
 
     }
   }
@@ -50,8 +58,8 @@ const Formulario = () => {
       <div className='flex bg-slate-700/70 rounded-xl w-auto h-auto flex-col items-center  gap-4 p-3'>
 
         <Input className='w-80' type="text" label="Nombre de Contacto" required value={user.nombre} name="nombre" onChange={changeMode} />
-        <Input className='w-80' type="text" label="Farmacia" value={user.farmacia} name="farmacia" onChange={changeMode} />
-        <Input className='w-80' type="email" label="Email" value={user.email} name='email' onChange={changeMode} />
+        <Input className='w-80' type="text" label="Farmacia" required value={user.farmacia} name="farmacia" onChange={changeMode} />
+        <Input className='w-80' type="email" label="Email" required value={user.email} name='email' onChange={changeMode} />
 
         <Button color="primary" onClick={handleContact}>Enviar</Button>
 

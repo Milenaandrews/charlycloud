@@ -22,14 +22,19 @@ const ContactoProvider = ({children}) => {
             const contactoGuardado = await axiosClient.post("/contacto", contacto)
             console.log(contactoGuardado)
             
-            if(contactoGuardado.success){
+            if(contactoGuardado.data.success){
                 dispatch({
                     type:"GUARDARCONTACTO",
                     payload: contactoGuardado.data
                 })
+               
+            } else {
+                throw new Error ( guardarContacto.data.msg)
             }
+            
         } catch (error) {
             console.log(error)
+            throw error
         }
     }
     return(

@@ -3,6 +3,7 @@ import "./globals.css";
 import Provider from "./Provider";
 import AppBar from "../components/AppBar";
 import ContactoProvider from "@/context/Contacto/ContactoProvider";
+import { ToastContainer } from "react-toastify";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,11 +18,13 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <Provider>
           <ContactoProvider>
-            <AppBar/>
+            <AppBar />
+
             {children}
+            <ToastContainer />
           </ContactoProvider>
         </Provider>
-        </body>
+      </body>
     </html>
   );
 }
