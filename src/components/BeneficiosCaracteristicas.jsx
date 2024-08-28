@@ -3,7 +3,6 @@ import { caracteristicas } from '@/constants/caracteristicas'
 import Image from 'next/image'
 import { useRef, useState } from 'react'
 import { ButtonMasInfo } from './ButtonMasInfo'
-import { fadeIn } from './utils/motionTransition'
 
 import { Accordion, AccordionItem } from "@nextui-org/accordion";
 import { useScroll, useTransform, motion } from 'framer-motion'
@@ -32,6 +31,9 @@ export const BeneficiosCaracteristicas = () => {
 
 
     return (
+        <>
+        
+        
         <section className=' h-full w-full py-[30px] text-white bg-[url("https://res.cloudinary.com/dzppqa6a9/image/upload/v1721181856/Rect_Light_wpdt8h.svg")] bg-repeat-y bg-cover bg-center px-5 lg:px-0 '>
 
             <div className=' flex flex-col wrap items-center '>
@@ -159,5 +161,6 @@ export const BeneficiosCaracteristicas = () => {
 
 
         </section >
+        </>
     )
 }

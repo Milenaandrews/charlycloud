@@ -18,7 +18,7 @@ export const errorAlert = () => {
 };
 
 export const successAlert = () =>{
-    toast.info('🦄 Wow!', {
+    toast.success('El E-book fue enviado con éxito a tu e-mail', {
         position: "top-center",
         autoClose: 5000,
         hideProgressBar: false,

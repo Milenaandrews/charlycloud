@@ -17,7 +17,7 @@ const AppBar = () => {
     },
   ]
   return (
-    <Navbar className="bg-gray-200/80">
+    <Navbar className="bg-gray-200/80 flex md:justify-start md:h-[7rem] md:w-auto md:pl-[80px]" >
 
       {/* Navbar XS */}
       <NavbarContent className="sm:hidden" justify="start">
@@ -26,9 +26,9 @@ const AppBar = () => {
 
       <NavbarContent className="sm:hidden pr-3" justify="center" >
         <NavbarBrand>
-          <Image alt="logo" src="https://res.cloudinary.com/dzppqa6a9/image/upload/v1709075705/logocharlysinfondo_omzz7l.png" width={400} height={400} className="w-12 h-10"/>       
+          <Image alt="logo" src="https://res.cloudinary.com/dzppqa6a9/image/upload/v1709075705/logocharlysinfondo_omzz7l.png" width={150} height={300} />       
           <Link href="/">
-            <p className="font-bold text-charly">Charly Cloud &#174;</p>
+            <p className="font-bold text-charly text-[25px]">Charly Cloud &#174;</p>
           </Link>
         </NavbarBrand>
       </NavbarContent>
@@ -39,28 +39,28 @@ const AppBar = () => {
             <Link className="text-charly" href={link.href}>
               {link.nombre}
             </Link>
-          </NavbarItem>
+          </NavbarItem> 
         ))}
 
       </NavbarMenu>
 
       {/* Navbar XL */}
-      <NavbarContent className="hidden sm:flex gap-4 justify-start">
+      <NavbarContent className="hidden md:flex">
         <NavbarBrand>
           <NavbarItem>
-            <Image alt="logo" src="https://res.cloudinary.com/dzppqa6a9/image/upload/v1709075705/logocharlysinfondo_omzz7l.png" width={100} height={300} />
+            <Image alt="logo" src="https://res.cloudinary.com/dzppqa6a9/image/upload/v1709075705/logocharlysinfondo_omzz7l.png" width={200} height={400} />
           </NavbarItem>
           
           <Link href="/">
-            <p className="font-bold text-charly">Charly Cloud &#174;</p>
+            <p className="font-bold text-charly text-[25px]">Charly Cloud &#174;</p>
           </Link>
         </NavbarBrand>
       </NavbarContent>
 
-      <NavbarContent className="hidden sm:flex gap-4" justify="center">
+      <NavbarContent className="hidden sm:flex gap-4 ml-[300px] border-red-700" justify="center">
         {links.map((link, i) => (
           <NavbarItem key={i}>
-            <Link className="text-charly font-bold" href={link.href}>
+            <Link className="text-charly font-bold text-[20px]" href={link.href}>
               {link.nombre}
             </Link>
           </NavbarItem>

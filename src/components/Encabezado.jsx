@@ -20,7 +20,11 @@ const Encabezado = () => {
     return (
         <>
             <div className="video-brackground relative h-full lg:overflow-hidden lg:h-screen ">
-                <video src="https://res.cloudinary.com/dyiu99z2a/video/upload/v1718856864/20240620_000835_0002_jerl3a.mp4" autoPlay muted loop className="video pt-10 md:pt-0 h-auto w-auto min-w-full md:min-h-full absolute "  ></video>
+                <video src="https://res.cloudinary.com/dyiu99z2a/video/upload/v1718856864/20240620_000835_0002_jerl3a.mp4" autoPlay muted loop className="video pt-10 md:pt-0 h-auto w-auto min-w-full md:min-h-full absolute "  >
+                    <source src="video-720p.mp4" type="video/mp4" media="(min-width: 720px)"></source>
+                    <source src="video-480p.mp4" type="video/mp4" media="(min-width: 480px)"></source>
+                    <source src="video-360p.mp4" type="video/mp4"></source>   
+               </video>
 
                 <motion.div ref={ref} className='relative z-1 flex flex-col wrap  gap-[50px] h-auto w-auto min-w-full md:min-h-full pt-8 px-10   xl:px-70  justify-center ' >
 

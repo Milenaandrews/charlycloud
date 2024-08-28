@@ -1,0 +1,58 @@
+'use client'
+import { caracteristicas } from '@/constants/caracteristicas'
+import Image from 'next/image'
+import { useState } from 'react'
+import { ButtonMasInfo } from './ButtonMasInfo'
+import { Accordion, AccordionItem } from "@nextui-org/accordion";
+
+
+export const BeneficiosCaracteristicas2 = () => {
+
+    const [toggle, setToggle] = useState(caracteristicas[3].id)
+
+
+    return (
+        <>
+            <section className=' h-full w-full py-[30px] text-charly2 bg-[#F7F7F7] bg-repeat-y bg-cover bg-center px-5 lg:px-0 '>
+
+
+                {/* //!! ACORDION 2 */}
+
+                <div className='text-[50px] text-center font-extrabold py-10'>
+                    <h3> Asignacion de funciones por roles</h3>
+                </div>
+
+                <div className='flex flex-col flex-wrap items-center justify-center gap-[20px] lg:gap-[10px] '>
+                    <div className='flex flex-row flex-wrap items-center justify-center gap-[20px] lg:gap-[100px] '>
+                        <div>
+                            <div>
+                                <Accordion className=' bg-charly4 rounded-[10px] min-w-[300px]  lg:min-w-[600px] lg:max-w-[600px] text-charly5 ' defaultExpandedKeys={['4']} >
+                                    {caracteristicas.slice(3, 6).map(({ content1, title, id }) => (
+                                        <AccordionItem key={id} className=' text-charly5 p-5 ' aria-label={`Accordion ${id}`} title={title} onPress={() => setToggle(id)} >
+                                            {content1}
+                                        </AccordionItem>
+                                    ))}
+                                </Accordion>
+                            </div>
+                        </div>
+                        <div className='px-3'>
+                            {caracteristicas.slice(3, 6).map(({ backgroundImage, id }) => (
+                                toggle === id ? (<Image key={id} className='rounded-box ' src={backgroundImage} width={400} height={300} alt='imagen' />) : null
+                            ))}
+                        </div>
+                    </div>
+
+                    <div className='flex flex-col gap-10 items-center justify-evenly text-balance py-10'>
+                        <p className='text-[40px] p-4 lg:p-0 lg:w-[700px] font-extrabold text-center'>¿Tienes más de un local?
+                            Activa la funcionalidad “traspasos“ y optimiza la gestion ​entre locales entre locales</p>
+                        <div >
+                            <ButtonMasInfo />
+                        </div>
+                    </div>
+                </div>
+
+
+            </section >
+        </>
+    )
+}
