@@ -55,11 +55,11 @@ const Formulario = () => {
         <p className='text-[40px] text-white font-bold  text-center px-4'> Llena tus datos y te regalamos nuestro e-book</p>
       
 
-      <div className='flex bg-slate-700/70 rounded-xl h-auto flex-col items-center  gap-4 p-3 w-[500px]'>
+      <div className='flex bg-slate-700/70 rounded-xl h-auto w-[350px] flex-col items-center  gap-4 p-3 md:w-[500px]'>
 
-        <Input className='w-[450px]' type="text" label="Nombre de Contacto" required value={user.nombre} name="nombre" onChange={changeMode} />
-        <Input className='w-[450px]' type="email" label="Email" required value={user.email} name='email' onChange={changeMode} />
-        <Input className='w-[450px]' type="text" label="Farmacia" required value={user.farmacia} name="farmacia" onChange={changeMode} />
+        <Input className='md:w-[450px]' type="text" label="Nombre de Contacto" required value={user.nombre} name="nombre" onChange={changeMode} />
+        <Input className='md:w-[450px]' type="email" label="Email" required value={user.email} name='email' onChange={changeMode} />
+        <Input className='md:w-[450px]' type="text" label="Farmacia" required value={user.farmacia} name="farmacia" onChange={changeMode} />
 
         <Button color="primary" onClick={handleContact}>Enviar</Button>
 
