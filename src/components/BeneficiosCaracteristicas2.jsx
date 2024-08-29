@@ -4,6 +4,8 @@ import Image from 'next/image'
 import { useState } from 'react'
 import { ButtonMasInfo } from './ButtonMasInfo'
 import { Accordion, AccordionItem } from "@nextui-org/accordion";
+import { PiLineVerticalBold } from 'react-icons/pi'
+import { FaPlus } from 'react-icons/fa6'
 
 
 export const BeneficiosCaracteristicas2 = () => {
@@ -13,7 +15,7 @@ export const BeneficiosCaracteristicas2 = () => {
 
     return (
         <>
-            <section className=' h-full w-full py-[30px] text-charly2 bg-[#F7F7F7] bg-repeat-y bg-cover bg-center px-5 lg:px-0 '>
+            <section className=' h-full w-full py-[30px] text-charly2 bg-[#F7F7F7]  px-5 lg:px-0 '>
 
 
                 {/* //!! ACORDION 2 */}
@@ -23,21 +25,34 @@ export const BeneficiosCaracteristicas2 = () => {
                 </div>
 
                 <div className='flex flex-col flex-wrap items-center justify-center gap-[20px] lg:gap-[10px] '>
-                    <div className='flex flex-row flex-wrap items-center justify-center gap-[20px] lg:gap-[100px] '>
-                        <div>
-                            <div>
-                                <Accordion className=' bg-charly4 rounded-[10px] min-w-[300px]  lg:min-w-[600px] lg:max-w-[600px] text-charly5 ' defaultExpandedKeys={['4']} >
-                                    {caracteristicas.slice(3, 6).map(({ content1, title, id }) => (
-                                        <AccordionItem key={id} className=' text-charly5 p-5 ' aria-label={`Accordion ${id}`} title={title} onPress={() => setToggle(id)} >
-                                            {content1}
-                                        </AccordionItem>
-                                    ))}
-                                </Accordion>
-                            </div>
-                        </div>
+                    <div className='flex flex-col-reverse  lg:flex-row flex-wrap items-center justify-center gap-[20px] lg:gap-[100px] '>
+
+                        <Accordion
+                            className='rounded-[10px] min-w-[300px]  lg:min-w-[600px] lg:max-w-[600px] text-charly5 '
+                            variant="splitted"
+                            itemClasses={{
+                                title: "font-extrabold text-[20px] text-charly7",
+                                base: ""
+                            }}
+
+                            defaultExpandedKeys={['4']} >
+
+                            {caracteristicas.slice(3, 6).map(({ content1, title, id }) => (
+                                <AccordionItem
+                                    key={id}
+                                    className=' text-charly5 p-5 '
+                                    aria-label={`Accordion ${id}`}
+                                    title={title}
+                                    onPress={() => setToggle(id)}
+                                    indicator={({ isOpen }) => (isOpen ? <PiLineVerticalBold /> : <FaPlus />)}>
+                                    {content1}
+                                </AccordionItem>
+                            ))}
+                        </Accordion>
+
                         <div className='px-3'>
                             {caracteristicas.slice(3, 6).map(({ backgroundImage, id }) => (
-                                toggle === id ? (<Image key={id} className='rounded-box ' src={backgroundImage} width={400} height={300} alt='imagen' />) : null
+                                toggle === id ? (<Image key={id} className='rounded-xl shadow-3xl' src={backgroundImage} width={400} height={300} alt='imagen' />) : null
                             ))}
                         </div>
                     </div>

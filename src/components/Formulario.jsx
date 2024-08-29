@@ -52,14 +52,14 @@ const Formulario = () => {
   return (
     <section id='form' className='flex w-full h-[700px] lg:h-[750px]  flex-col items-center gap-10  bg-[url(https://res.cloudinary.com/dzppqa6a9/image/upload/v1721235265/Cloudy_2_gph239.svg)] bg-cover md:pt-14'>
 
-        <p className='text-[30px] text-white font-bold  text-center px-4'> Llena tus datos y te regalamos nuestro e-book</p>
+        <p className='text-[40px] text-white font-bold  text-center px-4'> Llena tus datos y te regalamos nuestro e-book</p>
       
 
-      <div className='flex bg-slate-700/70 rounded-xl w-auto h-auto flex-col items-center  gap-4 p-3'>
+      <div className='flex bg-slate-700/70 rounded-xl h-auto flex-col items-center  gap-4 p-3 w-[500px]'>
 
-        <Input className='w-80' type="text" label="Nombre de Contacto" required value={user.nombre} name="nombre" onChange={changeMode} />
-        <Input className='w-80' type="text" label="Farmacia" required value={user.farmacia} name="farmacia" onChange={changeMode} />
-        <Input className='w-80' type="email" label="Email" required value={user.email} name='email' onChange={changeMode} />
+        <Input className='w-[450px]' type="text" label="Nombre de Contacto" required value={user.nombre} name="nombre" onChange={changeMode} />
+        <Input className='w-[450px]' type="email" label="Email" required value={user.email} name='email' onChange={changeMode} />
+        <Input className='w-[450px]' type="text" label="Farmacia" required value={user.farmacia} name="farmacia" onChange={changeMode} />
 
         <Button color="primary" onClick={handleContact}>Enviar</Button>
 

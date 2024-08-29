@@ -18,29 +18,12 @@ module.exports = {
         'blue': '4px 4px 4px  rgba(17, 130, 206, 1)',
       },
       boxShadow: {
-        '3xl': '0 35px 60px -5px rgba(0, 0, 0, 0.3)',
+        '3xl': '0px 5px 30px 0px rgba(0, 0, 0, 0.3)',
       }
 
     },
     darkMode: "class",
     plugins: [nextui()],
-  },
-
-  daisyui: {
-    themes: [
-      {
-        mytheme: {
-
-          "primary": "#0083ca",
-          "secondary": "#ffffff",
-          "accent": "#000241",
-
-
-
-
-        },
-      },
-    ],
   },
 
   plugins: [
@@ -74,7 +57,6 @@ module.exports = {
       }
     }),
 
-    require('daisyui'),
     require('tailwindcss-textshadow')
   ],
 }

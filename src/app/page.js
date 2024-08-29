@@ -10,13 +10,15 @@ import  {BeneficiosCaracteristicas3} from "@/components/BeneficiosCaracteristica
 import { FinalCaracteristicas } from "@/components/FinalCaracteristicas";
 import { Pildomatch } from "@/components/Pildomatch";
 import { EvitaMultas } from "@/components/EvitaMultas";
+import { InicioCaracterisiticas } from "@/components/InicioCaracteristicas";
 
 
 
 export default function Home() {
   return (
     <div>
-      <Encabezado/>
+      <Encabezado/>.
+      <InicioCaracterisiticas/>
       <BeneficiosCaracteristicas1/>
       <BeneficiosCaracteristicas2/>
       <BeneficiosCaracteristicas3/>
