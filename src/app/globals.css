@@ -2,7 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
-    /* background: linear-gradient(to right, rgba(17, 130, 206, 1) 25%, #99d6ff 50%, rgba(17, 130, 206, 1) 75%) ; */
-    background: "#fafdfe"
+body {
+  /* font-family: "", sans-serif; */
+  line-height: 1.6;
+  scroll-behavior: smooth;
+  background: "#fafdfe";
 }

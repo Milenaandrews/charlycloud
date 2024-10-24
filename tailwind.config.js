@@ -15,7 +15,7 @@ module.exports = {
         'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       textShadow: {
-        'blue': '4px 4px 4px  rgba(17, 130, 206, 1)',
+        'blue': '4px 4px 4px  rgba(0, 131, 202, 1)',
       },
       boxShadow: {
         '3xl': '0px 5px 30px 0px rgba(0, 0, 0, 0.3)',
@@ -34,8 +34,8 @@ module.exports = {
             secondary: {
               DEFAULT: "#f5741c",
             },
-            charly: {
-              DEFAULT: "#0083ca"
+            charly1: {
+              DEFAULT:"#0083ca"
             },
             charly2: {
               DEFAULT: "rgb(8, 56, 247)"
@@ -50,7 +50,7 @@ module.exports = {
               DEFAULT:"#093d5f"
             },
             charly6:{
-              DEFAULT:"#0083ca"
+              DEFAULT: "#e11e2e"
             }
           }
         }

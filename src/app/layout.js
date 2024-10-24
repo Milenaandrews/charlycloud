@@ -1,11 +1,11 @@
-import { Inter } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
 import Provider from "./Provider";
 import AppBar from "../components/AppBar";
 import ContactoProvider from "@/context/Contacto/ContactoProvider";
 import { ToastContainer } from "react-toastify";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Poppins({ weight:'500', subsets: ["latin"] });
 
 export const metadata = {
   title: "Create Next App",
