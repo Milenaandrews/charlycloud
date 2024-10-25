@@ -30,7 +30,7 @@ export const EvitaMultas = () => {
               con nuestro e-book
             </p>
             <div>
-              <Boton />
+              <Boton children={"MÁS INFO"} />
             </div>
           </div>
         </div>

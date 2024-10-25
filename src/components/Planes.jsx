@@ -3,7 +3,7 @@ const Planes = () => {
   return (
     <section
       id="planes"
-      className="h-full w-full flex flex-col py-10  bg-charly1 bg-cover text-charly4"
+      className="h-full w-full flex flex-col py-10  bg-charly1 bg-cover text-white"
     >
       <h1 className=" font-bold text-[50px] text-center pb-16 px-5 ">
         {" "}

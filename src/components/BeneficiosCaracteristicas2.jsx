@@ -33,7 +33,7 @@ export const BeneficiosCaracteristicas2 = () => {
               {caracteristicas.slice(3, 6).map(({ content1, title, id }) => (
                 <AccordionItem
                   key={id}
-                  className=" text-charly5 p-5 "
+                  className=" text-charly5 p-5 !bg-[#fafdfe]"
                   aria-label={`Accordion ${id}`}
                   title={title}
                   onPress={() => setToggle(id)}
@@ -53,7 +53,7 @@ export const BeneficiosCaracteristicas2 = () => {
                   toggle === id ? (
                     <Image
                       key={id}
-                      className="rounded-xl shadow-3xl"
+                      className="rounded-xl shadow-3xl "
                       src={backgroundImage}
                       width={400}
                       height={300}
@@ -70,7 +70,7 @@ export const BeneficiosCaracteristicas2 = () => {
               optimiza la gestion ​entre locales entre locales
             </p>
             <div>
-              <Boton />
+              <Boton children={"MÁS INFO"} />
             </div>
           </div>
         </div>

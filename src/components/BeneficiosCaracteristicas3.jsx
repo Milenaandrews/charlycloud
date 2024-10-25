@@ -28,7 +28,7 @@ export const BeneficiosCaracteristicas3 = () => {
                 toggle === id ? (
                   <Image
                     key={id}
-                    className="rounded-xl "
+                    className="rounded-xl shadow-3xl "
                     src={backgroundImage}
                     width={400}
                     height={300}
@@ -51,7 +51,7 @@ export const BeneficiosCaracteristicas3 = () => {
                 {caracteristicas.slice(6, 9).map(({ content1, title, id }) => (
                   <AccordionItem
                     key={id}
-                    className=" text-charly5 p-5"
+                    className=" text-charly5 p-5 !bg-[#fafdfe]"
                     aria-label="Accordion 3"
                     title={title}
                     onPress={() => setToggle(id)}
@@ -68,7 +68,11 @@ export const BeneficiosCaracteristicas3 = () => {
         </div>
 
         <div className="flex flex-col  lg:flex-row items-center justify-center text-balance py-10 lg:gap-[50px] ">
-          <Boton />
+          <Boton
+            className=" bg-charly1 text-white"
+            iconClass="text-white"
+            children={"MÁS INFO"}
+          />
 
           <p className="text-[40px] p-4 lg:p-0 lg:w-[700px] font-extrabold text-center">
             Construye relaciones sólidas con tus pacientes con nuestro e-book

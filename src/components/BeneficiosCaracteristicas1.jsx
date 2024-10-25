@@ -24,14 +24,14 @@ export const BeneficiosCaracteristicas1 = () => {
         </div>
 
         <div className="flex lg:flex-row flex-wrap items-center justify-center gap-[20px] lg:gap-[100px] ">
-          <div className="px-3 min-h-[400px] flex items-center justify-center">
+          <div className="px-3 min-h-[400px] flex items-center justify-center ">
             {caracteristicas
               .slice(0, 3)
               .map(({ backgroundImage, id }) =>
                 toggle === id ? (
                   <Image
                     key={id}
-                    className="rounded-xl "
+                    className="rounded-xl shadow-3xl"
                     src={backgroundImage}
                     width={400}
                     height={400}
@@ -76,7 +76,11 @@ export const BeneficiosCaracteristicas1 = () => {
           </p>
 
           <div>
-            <Boton />
+            <Boton
+              className=" bg-charly1 text-white"
+              iconClass="text-white"
+              children={"MÁS INFO"}
+            />
           </div>
         </div>
       </section>

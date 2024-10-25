@@ -56,7 +56,7 @@ const AppBar = () => {
 
       {/* Navbar XL */}
 
-      <NavbarContent className="hidden md:flex  ">
+      <NavbarContent className="hidden sm:flex  gap-5">
         <NavbarBrand>
           <NavbarItem>
             <Image
@@ -75,7 +75,7 @@ const AppBar = () => {
         </NavbarBrand>
       </NavbarContent>
 
-      <NavbarContent className="hidden sm:flex  ml-[300px]   justify-end">
+      <NavbarContent className="hidden sm:flex  ml-[300px]" justify="end">
         {links.map((link, i) => (
           <NavbarItem key={i}>
             <Link

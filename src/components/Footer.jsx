@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <section className="flex h-full w-full bg-gradient-to-r from-[#1182ce] to-[#053890] text-white text-center items-center justify-around py-10  ">
       <Image
-        src="https://res.cloudinary.com/dyiu99z2a/image/upload/v1729570641/logo_blanco_sin_fondo_nifpj9.jpg"
+        src="https://res.cloudinary.com/dyiu99z2a/image/upload/v1729779197/logo_blanco-removebg-preview_tlwc21.png"
         width={200}
         height={200}
       />
