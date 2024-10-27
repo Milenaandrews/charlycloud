@@ -4,10 +4,10 @@ import { Boton } from "./Boton";
 
 export const FinalCaracteristicas = () => {
   return (
-    <section className=" flex flex-col h-full w-full text-charly1 p-10 bg-charly4  ">
-      <div className="flex lg:flex-row  gap-[70px] justify-center ">
-        <div className="flex flex-col  text-center  gap-10 w-[900px] ">
-          <p className="md:text-[60px] text-[40px] font-extrabold leading-tight">
+    <section className=" h-full w-full text-charly1 p-10 bg-charly4  ">
+      <div className="flex lg:flex-row flex-col text-center gap-5 lg:gap-[70px] justify-center items-center ">
+        <div className="flex flex-col  text-center  gap-10 lg:w-[50%]  ">
+          <p className="md:text-[60px] text-[38px] font-extrabold leading-tight ">
             CHARLY CLOUD ES UN <span> SOFTWARE DE FARMACIA </span> DISEÑADO POR
             FARMACÉUTICOS
           </p>
@@ -21,14 +21,20 @@ export const FinalCaracteristicas = () => {
             “Gestión de Farmacia”
           </p>
         </div>
-        <div className=" flex items-center justify-center ">
-          <Image
-            src="https://res.cloudinary.com/dyiu99z2a/image/upload/v1720058749/1_hh3u1m.png"
-            alt="imagen"
-            width={500}
-            height={500}
-            className="rounded-xl"
-          />
+        <div className=" flex justify-center w-[350px] lg:w-[600px] lg:h-[500px] ">
+          <video
+            width="350"
+            height="350"
+            autoPlay
+            muted
+            loop
+            className="lg:w-[650px] rounded-3xl"
+          >
+            <source
+              src="https://res.cloudinary.com/dyiu99z2a/video/upload/v1729783441/6_ofb5vf.mp4"
+              type="video/mp4"
+            />
+          </video>
         </div>
       </div>
 

@@ -7,7 +7,7 @@ export const EvitaMultas = () => {
     <>
       <section className=" h-full w-full py-[30px] text-charly4  px-5 lg:px-0 bg-[url('https://res.cloudinary.com/dzppqa6a9/image/upload/v1721181856/Rect_Light_wpdt8h.svg')] bg-cover bg-center ">
         <div className="flex flex-col items-center gap-10">
-          <h1 className="text-[60px] font-black text-center">
+          <h1 className="text-[40px] lg:text-[60px] font-black text-center">
             Cumple las reglas del juego: Evita multas
           </h1>
           <div className="flex flex-col items-center lg:flex-row  gap-10 px-[30px]">

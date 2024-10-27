@@ -16,8 +16,8 @@ export const BeneficiosCaracteristicas3 = () => {
       <section className=" h-full w-full py-[30px] text-charly1 bg-charly4 bg-repeat-y bg-cover bg-center px-5 lg:px-0 ">
         {/* //!! ACORDION 3 */}
 
-        <div className="text-[50px] text-center font-extrabold py-10">
-          <h3> Atención farmacéutica: Fidelización</h3>
+        <div className="text-[40px] lg:text-[50px] text-center font-extrabold py-10 ">
+          <h3 className=""> Atención farmacéutica: Fidelización</h3>
         </div>
 
         <div className="flex flex-row flex-wrap items-center justify-center gap-[20px] lg:gap-[100px] ">

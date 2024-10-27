@@ -1,4 +1,6 @@
 "use client";
+import { TiTick } from "react-icons/ti";
+
 const Planes = () => {
   return (
     <section
@@ -7,14 +9,61 @@ const Planes = () => {
     >
       <h1 className=" font-bold text-[50px] text-center pb-16 px-5 ">
         {" "}
-        ELIGE TU PLAN{" "}
+        ELIGE EL PLAN QUE MÁS TE ACOMODE{" "}
       </h1>
 
       <div className="flex flex-col lg:flex-row wrap gap-[100px] justify-center items-center ">
-        <div className="h-[400px] w-[300px] bg-[#083d5f] rounded-[20px] transition hover:scale-125 hover:duration-500 shadow-3xl">
+        <div className="h-[400px] w-[300px] bg-[#083d5f] rounded-[20px] transition lg:hover:scale-125 lg:hover:duration-500 shadow-3xl">
           <h1 className="text-center text-white font-bold pt-5 text-[20px]">
             Básico
           </h1>
+          <ul>
+            <li>
+              <TiTick className="text-charly1" /> hola
+            </li>
+            <li>
+              <TiTick className="text-charly1" /> hola
+            </li>
+            <li>
+              <TiTick className="text-charly1" /> hola
+            </li>
+            <li>
+              <TiTick className="text-charly1" /> hola
+            </li>
+            <li>
+              <TiTick className="text-charly1" /> hola
+            </li>
+            <li>
+              <TiTick className="text-charly1" /> hola
+            </li>
+            <li>
+              <TiTick className="text-charly1" /> hola
+            </li>
+            <li>
+              <TiTick className="text-charly1" /> hola
+            </li>
+            <li>
+              <TiTick className="text-charly1" /> hola
+            </li>
+            <li>
+              <TiTick className="text-charly1" /> hola
+            </li>
+            <li>
+              <TiTick className="text-charly1" /> hola
+            </li>
+            <li>
+              <TiTick className="text-charly1" /> hola
+            </li>
+            <li>
+              <TiTick className="text-charly1" /> hola
+            </li>
+            <li>
+              <TiTick className="text-charly1" /> hola
+            </li>
+            <li>
+              <TiTick className="text-charly1" /> hola
+            </li>
+          </ul>
         </div>
         <div className="h-[400px] w-[300px] bg-[#083d5f] rounded-[20px] transition hover:scale-125 hover:duration-500 shadow-3xl">
           <h1 className="text-center text-white font-bold pt-5 text-[20px]">

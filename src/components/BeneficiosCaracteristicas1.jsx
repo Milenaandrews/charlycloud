@@ -9,10 +9,6 @@ import { PiLineVerticalBold } from "react-icons/pi";
 
 export const BeneficiosCaracteristicas1 = () => {
   const [toggle, setToggle] = useState(caracteristicas[0].id);
-  const itemClasses = {
-    title: "font-normal text-medium",
-    content: "text-small px-2",
-  };
 
   return (
     <>
@@ -24,7 +20,7 @@ export const BeneficiosCaracteristicas1 = () => {
         </div>
 
         <div className="flex lg:flex-row flex-wrap items-center justify-center gap-[20px] lg:gap-[100px] ">
-          <div className="px-3 min-h-[400px] flex items-center justify-center ">
+          <div className="px-3 flex items-center justify-center ">
             {caracteristicas
               .slice(0, 3)
               .map(({ backgroundImage, id }) =>

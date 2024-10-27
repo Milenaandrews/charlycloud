@@ -4,7 +4,13 @@
 
 body {
   /* font-family: "", sans-serif; */
-  line-height: 1.6;
+  /* line-height: 1.6; */
   scroll-behavior: smooth;
   background: "#fafdfe";
+}
+
+li {
+  display: flex;
+  align-items: center; /* Alinea verticalmente el ícono y el texto */
+  gap: 5px; /* Espacio entre el ícono y el texto */
 }
