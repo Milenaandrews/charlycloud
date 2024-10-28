@@ -3,7 +3,7 @@ export const caracteristicas = [
     {
         id: '1',
         title: "Control de Gestion",
-        content1: "Controla eficientemente los costos y optimiza tus decisiones financieras gracias a la visión detallada que ofrece nuestro software en cuanto a: Margen ganancia net, IVA Impuestos adicionales, Comisiones de Cenabast",
+        content1: "Controla eficientemente los costos y optimiza tus decisiones financieras gracias a la visión detallada que ofrece nuestro software en cuanto a: Margen ganancia neta, IVA Impuestos adicionales, Comisiones de Cenabast",
         backgroundImage: "https://res.cloudinary.com/dyiu99z2a/image/upload/v1720058749/1_hh3u1m.png"
     },
     {

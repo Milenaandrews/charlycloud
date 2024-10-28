@@ -58,6 +58,7 @@ export const BeneficiosCaracteristicas2 = () => {
                       width={400}
                       height={300}
                       alt="imagen"
+                      loading="lazy"
                     />
                   ) : null
                 )}
