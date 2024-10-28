@@ -21,14 +21,14 @@ export const FinalCaracteristicas = () => {
             “Gestión de Farmacia”
           </p>
         </div>
-        <div className=" flex justify-center w-[350px] lg:w-[600px] lg:h-[500px] ">
+        <div className=" flex justify-center w-[350px] lg:w-[600px] lg:h-[350px] ">
           <video
             width="350"
             height="350"
             autoPlay
             muted
             loop
-            className="lg:w-[650px] rounded-3xl"
+            className="lg:w-[650px] rounded-3xl lg:rounded-[50px]"
           >
             <source
               src="https://res.cloudinary.com/dyiu99z2a/video/upload/v1729783441/6_ofb5vf.mp4"

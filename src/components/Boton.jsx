@@ -10,7 +10,7 @@ export const Boton = ({ children, className, iconClass }) => {
       <Link href={"#form"}>
         <Button
           className={classNames(
-            "bg-charly4 text-charly1 font-extrabold text-[20px] h-[80px] w-[250px]",
+            "bg-charly4 text-charly1 font-extrabold text-[20px] h-[80px] w-[250px] gap-4 ",
             className // Combina la clase recibida con las clases existentes
           )}
         >
