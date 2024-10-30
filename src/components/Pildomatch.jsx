@@ -13,6 +13,7 @@ export const Pildomatch = () => {
           src="https://res.cloudinary.com/dzppqa6a9/image/upload/v1713395850/cambio_4__edited_1_bbnxtw.webp"
           width={400}
           height={400}
+          alt="pildomatch"
         />
       </Link>
     </aside>

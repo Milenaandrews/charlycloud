@@ -20,6 +20,7 @@ export const EvitaMultas = () => {
               width={300}
               height={200}
               className=""
+              alt="logo gobierno"
             />
           </div>
 

@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { FaLinkedin } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaFacebookSquare } from "react-icons/fa";
 
@@ -13,6 +12,7 @@ const Footer = () => {
         src="https://res.cloudinary.com/dyiu99z2a/image/upload/v1729779197/logo_blanco-removebg-preview_tlwc21.png"
         width={200}
         height={200}
+        alt="logo"
       />
       <div className="flex flex-col justify-center items-center gap-5">
         <h3>Contacto +569 81596754</h3>
