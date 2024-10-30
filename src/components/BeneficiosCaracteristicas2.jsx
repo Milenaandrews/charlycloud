@@ -16,7 +16,7 @@ export const BeneficiosCaracteristicas2 = () => {
         {/* //!! ACORDION 2 */}
 
         <div className="text-[50px] text-center font-extrabold py-10">
-          <h3> Asignacion de funciones por roles</h3>
+          <h3> Asignación de funciones por roles</h3>
         </div>
 
         <div className="flex flex-col flex-wrap items-center justify-center gap-[20px] lg:gap-[10px] ">
@@ -67,8 +67,8 @@ export const BeneficiosCaracteristicas2 = () => {
 
           <div className="flex flex-col gap-10 items-center justify-evenly text-balance py-10">
             <p className="text-[40px] p-4 lg:p-0 lg:w-[700px] font-extrabold text-center">
-              ¿Tienes más de un local? Activa la funcionalidad “traspasos“ y
-              optimiza la gestion ​entre locales entre locales
+              ¿Tienes más de un local? Activa la funcionalidad “Traspasos“ y
+              optimiza la gestión ​entre locales
             </p>
             <div>
               <Boton children={"MÁS INFO"} />

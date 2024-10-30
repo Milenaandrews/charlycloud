@@ -3,6 +3,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FaLinkedin } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { FaFacebookSquare } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -13,16 +15,16 @@ const Footer = () => {
         height={200}
       />
       <div className="flex flex-col justify-center items-center gap-5">
-        <h3>Contacto +569 135454543</h3>
-        <h3>Almirante Latorre 260</h3>
-        <ul className="socials">
-          {/* <li><Link href="#"><i className="fa fa-facebook"></i></Link></li>
-        <li><Link href="#"><i className="fa fa-twitter"></i></Link></li>
-        <li><Link href="#"><i className="fa fa-google-plus"></i></Link></li>
-        <li><Link href="#"><i className="fa fa-youtube"></i></Link></li> */}
+        <h3>Contacto +569 81596754</h3>
+        <ul className="socials flex gap-5 ">
           <li>
-            <Link href="#">
-              <FaLinkedin className="scale-150" />
+            <Link href="https://www.instagram.com/charlycloud.info?igsh=MXQxNTY0Y2ppdTJtMg%3D%3D">
+              <FaInstagram className="scale-150" />
+            </Link>
+          </li>
+          <li>
+            <Link href="https://www.facebook.com/share/JK1YfoSnNA2mP3yZ/?mibextid=LQQJ4d">
+              <FaFacebookSquare className="scale-150" />
             </Link>
           </li>
         </ul>

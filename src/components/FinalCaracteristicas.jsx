@@ -6,7 +6,7 @@ export const FinalCaracteristicas = () => {
   return (
     <section className=" h-full w-full text-charly1 p-10 bg-charly4  ">
       <div className="flex lg:flex-row flex-col text-center gap-5 lg:gap-[70px] justify-center items-center ">
-        <div className="flex flex-col  text-center  gap-10 lg:w-[50%]  ">
+        <div className="flex flex-col  text-center  gap-10 lg:w-[50%] pb-5 ">
           <p className="md:text-[60px] text-[38px] font-extrabold leading-tight ">
             CHARLY CLOUD ES UN <span> SOFTWARE DE FARMACIA </span> DISEÑADO POR
             FARMACÉUTICOS
@@ -15,10 +15,6 @@ export const FinalCaracteristicas = () => {
             Poseemos años de experiencia tras el mesón. Entendemos tus desafíos
             y dolencias, proponemos soluciones que realmente funcionan en una
             farmacia.
-          </p>
-          <p className="text-[30px] md:pb-10">
-            Hablamos con propiedad. Registrate para recibir nuestro e-book
-            “Gestión de Farmacia”
           </p>
         </div>
         <div className=" flex justify-center w-[350px] lg:w-[600px] lg:h-[350px] ">
@@ -38,7 +34,11 @@ export const FinalCaracteristicas = () => {
         </div>
       </div>
 
-      <div className="flex items-center justify-center pt-6">
+      <div className="flex  flex-col lg:flex-row items-center justify-center pt-6 gap-10">
+        <p className="text-[30px] w-[300px] text-center lg:w-[500px] ">
+          Hablamos con propiedad. Regístrate para recibir nuestro e-book
+          “Gestión de Farmacia”
+        </p>
         <Boton
           className=" bg-charly1 text-white"
           iconClass="text-white"
