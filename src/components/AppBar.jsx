@@ -22,7 +22,7 @@ const AppBar = () => {
     },
   ];
   return (
-    <Navbar className="bg-gray-200/80 flex h-[85px]" justify="start">
+    <Navbar className="bg-gray-200/80 flex h-[70px]" justify="start">
       {/* Navbar XS */}
       <NavbarContent className="sm:hidden " justify="start">
         <NavbarMenuToggle />
@@ -33,8 +33,8 @@ const AppBar = () => {
           <Image
             alt="logo"
             src="https://res.cloudinary.com/dzppqa6a9/image/upload/v1709075705/logocharlysinfondo_omzz7l.png"
-            width={120}
-            height={300}
+            width={100}
+            height={200}
           />
           <Link href="/">
             <p className="font-bold text-charly1 text-[15px]">

@@ -117,9 +117,9 @@ const Formulario = () => {
           onChange={changeMode}
         />
 
-        <Boton type="submit" className="bg-charly1 text-white scale-75">
+        <Button type="submit" className="bg-charly1 text-white scale-100">
           Enviar
-        </Boton>
+        </Button>
       </form>
     </section>
   );
