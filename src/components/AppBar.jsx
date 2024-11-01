@@ -60,10 +60,10 @@ const AppBar = () => {
         <NavbarBrand>
           <NavbarItem>
             <Image
-              alt="logo"
-              src="https://res.cloudinary.com/dzppqa6a9/image/upload/v1709075705/logocharlysinfondo_omzz7l.png"
+              src="https://res.cloudinary.com/dyiu99z2a/image/upload/v1729779197/logo_blanco-removebg-preview_tlwc21.png"
               width={200}
-              height={400}
+              height={200}
+              alt="logo"
             />
           </NavbarItem>
 

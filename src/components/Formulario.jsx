@@ -3,7 +3,7 @@ import React, { useContext, useState } from "react";
 import { Input, Button } from "@nextui-org/react";
 import ContactoContext from "@/context/Contacto/ContactoContext";
 import { errorAlert, successAlert } from "./utils/toastify";
-import { Boton } from "./Boton";
+import { BotonLoading } from "./BotonLoading";
 
 const Formulario = () => {
   const { guardarContacto } = useContext(ContactoContext);
@@ -15,19 +15,23 @@ const Formulario = () => {
   };
 
   const [user, setUser] = useState(initialValues);
+  const [loading, setLoading] = useState(false);
 
   const handleContact = async (e) => {
     e.preventDefault();
+    setLoading(true);
     try {
       await guardarContacto(user);
       //alert("registro existoso");
       successAlert();
       setUser(initialValues);
+      setLoading(false);
     } catch (error) {
       console.error("Error durante el registro de usuario", error);
       //alert("registro fallido")
       errorAlert();
       setUser(initialValues);
+      setLoading(false);
     }
   };
 
@@ -116,10 +120,13 @@ const Formulario = () => {
           name="farmacia"
           onChange={changeMode}
         />
-
-        <Button type="submit" className="bg-charly1 text-white scale-100">
-          Enviar
-        </Button>
+        {loading ? (
+          <BotonLoading />
+        ) : (
+          <Button type="submit" className="bg-charly1 text-white scale-100">
+            Enviar
+          </Button>
+        )}
       </form>
     </section>
   );
