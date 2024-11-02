@@ -69,12 +69,13 @@ const Planes = () => {
         </div>
         {/* //? TARJETA BASICO PLUS// */}
         <div className="plan-basico-plus h-[450px] w-[300px] bg-[rgba(8,61,95,0.9)] hover:bg-[#083d5f]  rounded-[20px] transition lg:hover:scale-125 lg:hover:duration-500 shadow-3xl p-3  ">
-          <h1 className="text-center text-white font-bold text-[30px] pb-3">
+          <h1 className="text-center text-white font-bold text-[30px] pb-2">
             Básico Plus
           </h1>
-          <h2 className="text-center text-[15px] pb-3">
+          <h2 className="text-center text-[15px] pb-2">
+            Arma el plan a tu medida <br />
             Junto a las funciones del Plan Básico, activa aquellas que potencien
-            tu farmacia.
+            tu farmacia:
           </h2>
           <h2 className="text-center text-[17px] pb-3 font-bold">
             Arma el plan a tu medida.

@@ -3,7 +3,7 @@ export const caracteristicas = [
     {
         id: '1',
         title: "Control de Gestión",
-        content1: "Controla eficientemente los costos y optimiza tus decisiones financieras gracias a la visión detallada que ofrece nuestro software en cuanto a: Margen ganancia neta, IVA e Impuestos adicionales, Comisiones de Cenabast",
+        content1: "Controla eficientemente los costos y optimiza tus decisiones financieras gracias a la visión detallada que ofrece nuestro software en cuanto a: Margen ganancia neta, IVA, Impuestos adicionales y Comisiones de Cenabast",
         backgroundImage: "https://res.cloudinary.com/dyiu99z2a/image/upload/h_400,w_400/v1730168132/webp/y5ggpvfhzecbxpsic97k.webp"
     },
     {
@@ -57,7 +57,7 @@ export const caracteristicas = [
     {
         id: '9',
         title: "Marketing de fidelización",
-        content1: "Nuestro software proporciona herramientas avanzadas de Marketing para segmentar y gestionar programas de fidelización que fortalecen el vínculo con tus clientes y aumentar las visitas a tu farmacia.",
+        content1: "Nuestro software proporciona herramientas avanzadas de Marketing para segmentar, gestionar programas de fidelización que fortalecen el vínculo con tus clientes y aumentar las visitas a tu farmacia.",
         backgroundImage: "https://res.cloudinary.com/dyiu99z2a/image/upload/h_400,w_400/v1730168134/webp/nefcfcc52v5caivqhsl5.webp"
     },
 

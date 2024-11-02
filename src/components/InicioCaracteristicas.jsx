@@ -14,7 +14,7 @@ export const InicioCaracterisiticas = () => {
             </h1>
 
             <h2 className=" flex flex-col text-center justify-center  md:w-[650px] md:h-[300px] rounded-xl   ">
-              Es intuitivo y fácil de usar ayudando a las farmacias a
+              Es intuitivo y fácil de usar. Ayuda a las farmacias a
               rentabilizar, organizar, brindar la mejor atención a sus pacientes
               y cumplir con las normativas legales.
             </h2>

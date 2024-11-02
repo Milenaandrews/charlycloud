@@ -32,12 +32,12 @@ const AppBar = () => {
         <NavbarBrand>
           <Image
             alt="logo"
-            src="https://res.cloudinary.com/dzppqa6a9/image/upload/v1709075705/logocharlysinfondo_omzz7l.png"
+            src="https://res.cloudinary.com/dyiu99z2a/image/upload/v1730506600/Dise%C3%B1o_sin_t%C3%ADtulo_dx1esw.png"
             width={100}
-            height={200}
+            height={100}
           />
           <Link href="/">
-            <p className="font-bold text-charly1 text-[15px]">
+            <p className="font-bold text-charly1 text-[15px] ml-1">
               Charly Cloud &#174;
             </p>
           </Link>
@@ -60,16 +60,16 @@ const AppBar = () => {
         <NavbarBrand>
           <NavbarItem>
             <Image
-              src="https://res.cloudinary.com/dyiu99z2a/image/upload/v1729779197/logo_blanco-removebg-preview_tlwc21.png"
-              width={200}
-              height={200}
+              src="https://res.cloudinary.com/dyiu99z2a/image/upload/v1730506600/Dise%C3%B1o_sin_t%C3%ADtulo_dx1esw.png"
+              width={120}
+              height={100}
               alt="logo"
             />
           </NavbarItem>
 
           <Link href="/">
-            <p className="font-bold text-charly1 text-[25px]">
-              Charly Cloud &#174;
+            <p className="font-bold text-charly1 text-[25px] ml-3">
+              Charly Cloud <span className="font-normal">&#174;</span>
             </p>
           </Link>
         </NavbarBrand>

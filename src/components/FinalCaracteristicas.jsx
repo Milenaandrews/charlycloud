@@ -34,8 +34,8 @@ export const FinalCaracteristicas = () => {
 
       <div className="flex  flex-col lg:flex-row items-center justify-center pt-6 gap-10">
         <p className="text-[30px] w-[300px] text-center lg:w-[500px] ">
-          Hablamos con propiedad. Regístrate para recibir nuestro e-book
-          “Gestión de Farmacia”
+          <span className="font-bold">¡Hablamos con propiedad!</span> Regístrate
+          para recibir nuestro e-book “Gestión de Farmacia”
         </p>
         <Boton
           className=" bg-charly1 text-white"
