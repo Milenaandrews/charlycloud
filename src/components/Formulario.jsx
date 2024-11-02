@@ -115,7 +115,6 @@ const Formulario = () => {
           className="md:w-[450px]"
           type="text"
           label="Farmacia"
-          required
           value={user.farmacia}
           name="farmacia"
           onChange={changeMode}

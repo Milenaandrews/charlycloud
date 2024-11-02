@@ -18,12 +18,18 @@ const Footer = () => {
         <h3>Contacto +569 81596754</h3>
         <ul className="socials flex gap-5 ">
           <li>
-            <Link href="https://www.instagram.com/charlycloud.info?igsh=MXQxNTY0Y2ppdTJtMg%3D%3D">
+            <Link
+              href="https://www.instagram.com/charlycloud.info?igsh=MXQxNTY0Y2ppdTJtMg%3D%3D"
+              target="_blank"
+            >
               <FaInstagram className="scale-150" />
             </Link>
           </li>
           <li>
-            <Link href="https://www.facebook.com/share/JK1YfoSnNA2mP3yZ/?mibextid=LQQJ4d">
+            <Link
+              href="https://www.facebook.com/share/JK1YfoSnNA2mP3yZ/?mibextid=LQQJ4d"
+              target="_blank"
+            >
               <FaFacebookSquare className="scale-150" />
             </Link>
           </li>

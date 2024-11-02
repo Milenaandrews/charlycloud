@@ -4,7 +4,7 @@ import React from "react";
 
 export const Pildomatch = () => {
   return (
-    <aside className=" flex flex-col lg:flex-row h-full w-full bg-white items-center justify-evenly lg:gap-[50px] py-10 lg:py-0">
+    <aside className=" flex flex-col lg:flex-row h-full w-full bg-white items-center justify-evenly lg:gap-[50px] py-10 lg:py-0 xl:mt-4">
       <p className="text-[50px] text-[#800294] font-extrabold text-center">
         En asociación con:
       </p>
