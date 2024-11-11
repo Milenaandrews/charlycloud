@@ -77,9 +77,9 @@ const Planes = () => {
             Junto a las funciones del Plan Básico, activa aquellas que potencien
             tu farmacia:
           </h2>
-          <h2 className="text-center text-[17px] pb-3 font-bold">
+          {/* <h2 className="text-center text-[17px] pb-3 font-bold">
             Arma el plan a tu medida.
-          </h2>
+          </h2> */}
           <ul>
             <li>
               <TiTick className="text-charly1" /> Filtro Petitorio Mínimo
