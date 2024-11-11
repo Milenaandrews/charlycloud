@@ -36,7 +36,7 @@ const Footer = () => {
           </li>
           <li>
             <Link
-              href="https://api.whatsapp.com/send?phone=56981596754"
+              href="https://web.whatsapp.com/send?phone=56981596754"
               target="_blank"
               aria-label="Enlace a Whatsapp de CharlyCloud"
             >
