@@ -2,8 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { FaInstagram } from "react-icons/fa";
-import { FaFacebookSquare } from "react-icons/fa";
+import { FaInstagram, FaFacebookSquare, FaWhatsapp } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -21,6 +20,7 @@ const Footer = () => {
             <Link
               href="https://www.instagram.com/charlycloud.info?igsh=MXQxNTY0Y2ppdTJtMg%3D%3D"
               target="_blank"
+              aria-label="Enlace a Instagram de CharlyCloud"
             >
               <FaInstagram className="scale-150" />
             </Link>
@@ -29,8 +29,18 @@ const Footer = () => {
             <Link
               href="https://www.facebook.com/share/JK1YfoSnNA2mP3yZ/?mibextid=LQQJ4d"
               target="_blank"
+              aria-label="Enlace a Facebook de CharlyCloud"
             >
               <FaFacebookSquare className="scale-150" />
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="https://api.whatsapp.com/send?phone=56981596754"
+              target="_blank"
+              aria-label="Enlace a Whatsapp de CharlyCloud"
+            >
+              <FaWhatsapp className="scale-150" />
             </Link>
           </li>
         </ul>

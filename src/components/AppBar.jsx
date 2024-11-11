@@ -36,7 +36,7 @@ const AppBar = () => {
             width={100}
             height={100}
           />
-          <Link href="/">
+          <Link href="/" aria-label="Logo CharlyCloud">
             <p className="font-bold text-charly1 text-[15px] ml-1">
               Charly Cloud &#174;
             </p>
@@ -67,7 +67,7 @@ const AppBar = () => {
             />
           </NavbarItem>
 
-          <Link href="/">
+          <Link href="/" aria-label="Logo CharlyCloud">
             <p className="font-bold text-charly1 text-[25px] ml-3">
               Charly Cloud <span className="font-normal">&#174;</span>
             </p>
